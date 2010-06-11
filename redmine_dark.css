@@ -1,0 +1,282 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("redmine.corp.sodahead.com"),
+               domain("redmine") {
+
+  body {
+    background: #262626 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAENCAYAAADOoA9GAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABZSURBVHjaYmBgYPjPACP+MYFIEPEflfUflwQRSojgUiyGX4IkJTTRi5P4R39T/tFByT8qa6OJof8GPJgGPjHQI/FTki+pWFCQXlQhsZiBmBFMwLlgwAgQYAAYPe0bQ81rlgAAAABJRU5ErkJggg==") top left repeat-x !important;
+    color: #bbb !important;
+  }
+
+  /* used on the wiki syntax pages */
+  table td, pre {
+    background-color: transparent !important;
+  }
+
+  input[type="text"], input[type="password"], input[type="checkbox"], input[type="radio"], select, textarea {
+    background: #bbb !important;
+    color: #000 !important;
+  }
+
+  #wrapper, #content, #header, #main, #footer, #top-menu {
+    background-color: transparent !important;
+    color: #bbb !important;
+  }
+
+  #main, #main > #content {
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+  }
+  #header {
+    height: 60px !important;
+    padding-bottom: 0 !important;
+  }
+  #main > #content > h2 {
+    margin-bottom: 0 !important;
+  }
+
+  #top-menu #loggedas {
+    color: #bbb !important;
+  }
+
+  #content {
+    border: none !important;
+    width: 99% !important;
+  }
+
+  #sidebar {
+    display: none !important;
+    width: 0% !important;
+  }
+
+  #login-form {
+    color: #000 !important;
+  }
+
+  h2, .wiki h1, h3, .wiki h2, h4, .wiki h3, legend {
+    color: #bbb !important;
+  }
+
+  a, a:link, a:visited {
+    color: #336699 !important;
+  }
+
+  #main-menu li a {
+    background-color: transparent !important;
+  }
+
+  #main-menu li a.selected, #main-menu li a.selected:hover {
+    background-color: #bbb !important;
+  }
+
+  .box {
+    background-color: transparent !important;
+    color: #bbb !important;
+  }
+
+  fieldset, table.list {
+    border: 1px solid #3f3f3f !important;
+  }
+
+  table.list th {
+    background-color: transparent !important;
+  }
+
+  table.list thead th {
+    border: 1px solid #3f3f3f !important;
+  }
+
+  table.list tbody td, table.list tbody tr:hover td {
+    border: 1px solid #3f3f3f !important;
+  }
+
+  form[action="/issues"] table.list tr th:first-child, /* checkbox */
+  form[action="/issues"] table.list tr td:first-child
+  {
+    display: none !important;
+  }
+
+  table.list tr th[title="Sort by \"Tracker\""], /* ticket type */
+  table.list tr td.tracker,
+  table.list tr th[title="Sort by \"Target version\""], /* target version */
+  table.list tr td.fixed_version,
+  table.list tr th[title="Sort by \"Start\""], /* start date */
+  table.list tr td.start_date,
+  table.list tr th[title="Sort by \"Updated\""], /* updated date */
+  table.list tr td.updated_on,
+  table.list tr th[title="Sort by \"Due date\""], /* due date */
+  table.list tr td.due_date,
+  table.list tr th[title="Sort by \"Due date\""] + th, /* review req*/
+  table.list tr td.cf_3,
+  table.list tr th:last-child, /* update sql or py */
+  table.list tr td.cf_4
+  {
+    display: none !important;
+  }
+
+  tr.odd {
+    background: transparent !important;
+    border-color: #3f3f3f !important;
+  }
+
+  tr.even {
+    background: transparent !important;
+    border-color: #3f3f3f !important;
+  }
+
+  tr.odd:hover, tr.even:hover {
+    background: #333 !important;
+  }
+
+  tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover {
+    color: #bbb !important;
+    font-weight: normal !important;
+  }
+  tr.odd.priority-5 {
+    background: transparent !important;
+  }
+  tr.even.priority-5, table.list tbody tr.even.priority-5:hover {
+    color: #bbb !important;
+    font-weight: normal !important;
+  }
+  tr.even.priority-5 {
+    background: transparent !important;
+  }
+  tr.priority-5 a, tr.priority-5:hover a {
+    color: #d2a8a8 !important;
+  }
+  tr.odd.priority-5 td, tr.even.priority-5 td {
+    border-color: #3f3f3f !important;
+  }
+  table.list tbody tr.odd.priority-5:hover,
+  tr.priority-5:hover {
+    background: #333 !important;
+  }
+
+  tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover {
+    color: #bbb !important;
+  }
+  tr.odd.priority-4 {
+    background: transparent !important;
+  }
+  tr.even.priority-4, table.list tbody tr.even.priority-4:hover {
+    color: #bbb !important;
+  }
+  tr.even.priority-4 {
+    background: transparent !important;
+  }
+  tr.priority-4 a {
+    color: #d2a8a8 !important;
+  }
+  tr.odd.priority-4 td, tr.even.priority-4 td {
+    border-color: #3f3f3f !important;
+  }
+  table.list tbody tr.odd.priority-4:hover,
+  tr.priority-4:hover {
+    background: #333 !important;
+  }
+
+  tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover {
+    color: #bbb !important;
+  }
+  tr.odd.priority-3 {
+    background: transparent !important;
+  }
+  tr.even.priority-3, table.list tbody tr.even.priority-3:hover {
+    color: #bbb !important;
+  }
+  tr.even.priority-3 {
+    background: transparent !important;
+  }
+  tr.priority-3 a {
+    color: #994444 !important;
+  }
+  tr.odd.priority-3 td, tr.even.priority-3 td {
+    border-color: #3f3f3f !important;
+  }
+  table.list tbody tr.odd.priority-3:hover,
+  tr.priority-3:hover {
+    background: #333 !important;
+  }
+
+  tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover {
+    color: #bbb !important;
+  }
+  tr.odd.priority-1 {
+    background: transparent !important;
+  }
+  tr.even.priority-1, table.list tbody tr.even.priority-1:hover {
+    color: #bbb !important;
+  }
+  tr.even.priority-1 {
+    background: transparent !important;
+  }
+  tr.priority-1 a {
+    color: #808080 !important;
+  }
+  tr.odd.priority-1 td, tr.even.priority-1 td {
+    border-color: #3f3f3f !important;
+  }
+  table.list tbody tr.odd.priority-1:hover,
+  tr.priority-1:hover {
+    background: #333 !important;
+  }
+
+  div.issue {
+    background-color: #333 !important;
+  }
+
+  div.issue table td {
+    white-space: nowrap !important;
+  }
+
+  table.progress td.closed {
+    background:#569056 none repeat scroll 0 50% !important;
+  }
+
+  /*div.issue a, div.issue a:link, div.issue a:visited {
+    color: #474798 !important;
+  }*/
+
+  div.wiki div.toc {
+    background-color: #bbb !important;
+  }
+
+  div.wiki pre {
+    background-color: transparent !important;
+  }
+
+  .context-menu-selection {
+    color: #bbb !important;
+  }
+
+  .mypage-box {
+    color: #bbb !important;
+  }
+
+  /* for search highlighting */
+  .highlight.token-1 {
+    color: #333 !important;
+  }
+
+  table.filecontent {
+    background: #ddddcc !important;
+    color: #000 !important;
+  }
+
+  table.filecontent tr.spacing td {
+    border-color: #bbb !important;
+  }
+
+  .diff_out {
+    background: #ffcccc !important;
+  }
+
+  .diff_in {
+    background: #ccffcc !important;
+  }
+
+  #preview fieldset {
+    background: transparent url("data:image/png;base64,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") repeat scroll 0 0 !important;
+  }
+}
