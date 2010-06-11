@@ -1,0 +1,119 @@
+/**
+ * The following is used to counter-act issues when using a dark gtk theme.
+ *
+ * In addition to this file, comment out the following from the specified
+ * selectors in: /usr/lib/xulrunner-<version>/res/forms.css
+ *
+ *   input {
+ *     -moz-appearance
+ *     background-color
+ *     color
+ *   }
+ *
+ *   input[type="radio"],
+ *   input[type="checkbox"] {
+ *     background-color
+ *     color
+ *     border
+ *   }
+ *
+ *   button,
+ *   input[type="reset"],
+ *   input[type="button"],
+ *   input[type="submit"] {
+ *     background-color
+ *     color
+ *   }
+ *
+ * Add the following to the specified selectors in forms.css
+ *
+ *   select > input[type="button"] {
+ *     border-left: 1px solid black !important;
+ *     border-top: none !important;
+ *     border-right: none !important;
+ *     border-bottom: none !important;
+ *   }
+ */
+
+input[type="checkbox"],
+input[type="password"],
+input[type="radio"],
+input[type="text"] {
+  border: 2px inset white;
+  background-color: white;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+textarea {
+  border: 2px inset white;
+  background-color: white;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+select {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  border: 1px inset ThreeDFace !important;
+  background-color: white !important;
+  color: ThreeDFace !important;
+  /*-moz-appearance: none !important;*/
+}
+
+*|*::-moz-radio {
+  background-color: white;
+  -moz-appearance: none !important;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  border-top: 1px outset white;
+  border-left: 1px outset white;
+  border-right: 1px outset black;
+  border-bottom: 1px outset black;
+  background-color: #dddddd;
+  color: black;
+  -moz-appearance: none !important;
+}
+
+button:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #eeeeee;
+}
+
+/* ftp view */
+#UI_goUp .up,
+table a.dir,
+table a.file,
+table a.symlink {
+  color: #4784d0;
+}
+
+/* rss feed view */
+#feedContent,
+#feedTitleText,
+#feedSubtitleText {
+  color: -moz-FieldText;
+}
+#feedContent a {
+  color: #4784d0;
+}
+
+/* server not found, private browsing, etc. */
+#aboutPageContainer, #errorPageContainer {
+  color: #aaa !important;
+}
+#aboutPageList a, #errorPageContainer a {
+  color: #4784d0;
+}

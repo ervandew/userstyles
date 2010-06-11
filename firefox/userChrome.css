@@ -1,0 +1,28 @@
+/* set default namespace to XUL */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* set default background color for form input auto completion */
+#PopupAutoComplete, #PopupAutoComplete > .autocomplete-tree {
+  color: #000000 !important;
+  background: white none no-repeat fixed center !important;
+}
+
+/** Firebug Styling **/
+
+/* fix firebug console input when a dark gtk theme is installed */
+#fbCommandLine {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* set select firebug tab color to black */
+#fbPanelBox {
+  color: black !important;
+}
+/* failed attempt to target more specifically */
+/*#fbPanelBox > panelBar > panelTab[selected="true"] {
+  color: black !important;
+}
+#fbPanelBox > panelBar > panelTab:hover {
+  color: black !important;
+}*/
