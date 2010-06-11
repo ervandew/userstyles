@@ -1,0 +1,52 @@
+#!/bin/bash
+
+##
+# Script to manage styles from the stylish sqlite database.
+##
+
+function usage {
+  echo "stylish <stylish.sqlite> <command> [options]"
+  echo "    Commands:"
+  echo "        dump <dir> - dumps all custom styles to css files in <dir>."
+}
+
+function dump {
+  if [ -z "$1" ] ; then
+    echo "abort: a directory to dump to must be supplied"
+    return
+  elif [ ! -d "$1" ] ; then
+    echo "abort: directory does not exist: $1"
+    return
+  fi
+
+  dir=$1
+  styles=`sqlite3 -csv $stylish_db "select id, lower(name) from styles where url is null"`
+  IFS=$'\n'
+  for style in $styles ; do
+    sid=`echo $style | sed 's|\([0-9]\+\),.*|\1|'`
+    sname=`echo $style | sed 's|[0-9]\+,"\(.*\)"|\1|' | sed 's|\W\+|_|g'`
+    sqlite3 -list $stylish_db "select code from styles where id = $sid;" > $dir/$sname.css
+  done
+}
+
+if [ $# -lt 2 ] ; then
+  usage
+  exit
+fi
+
+stylish_db=$1
+shift
+if [ ! -f "$stylish_db" ] ; then
+  echo "abort: stylish.sqlite file does not exist: $stylish_db"
+  exit
+fi
+
+command=$1
+shift
+case $command in
+  dump) dump "$@" ;;
+  *)
+    echo "unrecognized command: $command"
+    usage
+  ;;
+esac
