@@ -1,0 +1,157 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("fogbugz.com") {
+
+  body {
+    background: #262626 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAENCAYAAADOoA9GAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABZSURBVHjaYmBgYPjPACP+MYFIEPEflfUflwQRSojgUiyGX4IkJTTRi5P4R39T/tFByT8qa6OJof8GPJgGPjHQI/FTki+pWFCQXlQhsZiBmBFMwLlgwAgQYAAYPe0bQ81rlgAAAABJRU5ErkJggg==") top left repeat-x !important;
+    color: #bbb !important;
+  }
+
+  input, textarea {
+    background-color: #bbb !important;
+  }
+
+  #mainArea, #mainAreaContinued {
+    color: #bbb !important;
+  }
+
+  #mainnav a.navlink {
+    color: #222 !important;
+  }
+
+  .popupMenu, .favoritesPopup,
+  #mainArea .popFilterOpt,
+  #mainArea .popFilterOpt div.highlight {
+    background: #333 !important;
+    border-color: #555 !important;
+  }
+
+  #appTabs li {
+    border-color: #555 !important;
+  }
+  #appTabs li.tabFogBugz.selected {
+    background-color: #777 !important;
+    border-color: #555 !important;
+  }
+
+  #banner {
+    background: #777 !important;
+    border-color: #555 !important;
+  }
+
+  #belowBanner {
+    background: transparent !important;
+  }
+  #belowBanner a.navlink {
+    color: #bbb !important;
+  }
+
+  #listHeader .top .left,
+  #listHeader .top .right,
+  #listHeader .bottom .left,
+  #listHeader .bottom .right {
+    background: none !important;
+  }
+
+  #listHeader,
+  .bugList .bugs th,
+  .biglist th,
+  .smalllist th,
+  .mini-table th,
+  #fbsidebar .header,
+  #fbsidebar .header th,
+  #fbsidebar .caption th {
+    background: #333 !important;
+  }
+  #fbsidebar, #fbsidebar th, #fbsidebar td {
+    color: #bbb !important;
+  }
+
+  .bugList .bugs th {
+    border-color: #555 !important;
+  }
+
+  .mainArea h2,
+  #listName,
+  #listTitle,
+  #listName a,
+  #listName a:link,
+  #listName a:visited,
+  #listTitle a,
+  #listTitle a:link,
+  #listTitle a:visited,
+  .listToolbar a:link,
+  .listToolbar a:visited {
+    color: #bbb !important;
+  }
+
+  .g-r-a td,
+  .r-a td,
+  .row td,
+  .r-d td,
+  .g-r td,
+  .g-r-a td,
+  .r-a td {
+    background: transparent !important;
+    border-color: #555 !important;
+  }
+
+  a.actionButton:link,
+  a.actionButton:visited,
+  a.actionButton:hover,
+  a.actionButton:active,
+  a.actionButton:focus,
+  a.actionButtonDisabled:link,
+  a.actionButtonDisabled:visited,
+  a.actionButtonDisabled:hover,
+  a.actionButtonDisabled:active,
+  a.actionButtonDisabled:focus {
+    background: #333 !important;
+    border-color: #555 !important;
+    color: #999 !important;
+  }
+
+  a.vb:link,
+  a.vb:visited,
+  body .favoritesPopup a.vb:link,
+  body .favoritesPopup a.vb:visited {
+    color: #808080 !important;
+  }
+
+  a:link, a.novisited:visited, #mainArea a.novisited:visited,
+  a.uvb:link,
+  a.uvb:visited,
+  body .favoritesPopup a.uvb:link,
+  body .favoritesPopup a.uvb:visited {
+    color: #336699 !important;
+  }
+
+  p.dlg {
+    color: #bbb !important;
+  }
+
+  a.chunk {
+    color: #222 !important;
+  }
+
+  #bugviewContainer {
+    background-color: #303030 !important;
+    border-color: #555 !important;
+  }
+  .buttonbar {
+    background: #222 !important;
+  }
+  div.bugShadowBottom, div.bugShadowRight, div.bugShadowBL, div.bugShadowUR, div.bugShadowBR {
+    background: none !important;
+  }
+  #bugviewContainer hr {
+    border-color: #555 !important;
+  }
+  #bugviewContainer .bugevents .bugevent .summary .action,
+  #bugviewContainer .side label {
+    color: #bbb !important;
+  }
+  #bugviewContainer .bugevents .bugevent {
+    border-bottom: 1px solid #555 !important;
+  }
+}
