@@ -7,8 +7,9 @@
     color: #bbb !important;
   }
 
-  input, textarea {
+  input, textarea, div.droplistSurround {
     background-color: #bbb !important;
+    color: #222 !important;
   }
 
   #mainArea, #mainAreaContinued {
@@ -108,7 +109,13 @@
   a.actionButtonDisabled:focus {
     background: #333 !important;
     border-color: #555 !important;
-    color: #999 !important;
+  }
+
+  a.actionButton:link {
+    color: #bbb !important;
+  }
+  a.actionButtonDisabled:link {
+    color: #222 !important;
   }
 
   a.vb:link,
@@ -133,6 +140,9 @@
   a.chunk {
     color: #222 !important;
   }
+  a.chinput {
+    border-color: #bbb !important;
+  }
 
   #bugviewContainer {
     background-color: #303030 !important;
@@ -148,10 +158,15 @@
     border-color: #555 !important;
   }
   #bugviewContainer .bugevents .bugevent .summary .action,
-  #bugviewContainer .side label {
+  #bugviewContainer .side label,
+  .bugTip strong,
+  .bugTip {
     color: #bbb !important;
   }
   #bugviewContainer .bugevents .bugevent {
     border-bottom: 1px solid #555 !important;
+  }
+  .sizerSide > div {
+    border-color: #555 !important;
   }
 }
