@@ -72,6 +72,22 @@
     border-color: #555 !important;
   }
 
+  td.description,
+  td.bottomBorder {
+    border-color: #555 !important;
+  }
+  div.caseIdPopup,
+  table.caseIdPopupTitle,
+  td.middleLeft,
+  td.middleRight {
+    background: #303030 !important;
+    border-color: #555 !important;
+  }
+
+  td.emptyActionButtons {
+    background: #222 !important;
+  }
+
   .mainArea h2,
   #listName,
   #listTitle,
