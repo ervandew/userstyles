@@ -158,19 +158,31 @@
     border-color: #555555 !important;
   }
 
-  #facebox .body {
-    background-color: #222222 !important;
+  #facebox .close {
+    background-color: transparent !important;
   }
-  .newface,
-  .newface .commit-preview .message pre {
+  #facebox .body, #facebox .content {
+    background: #222222 !important;
     color: #777777 !important;
   }
+  .newface .commit-preview .message pre,
+  #facebox pre {
+    background: #222222 !important;
+    border-color: #555555 !important;
+    color: #777777 !important;
+  }
+  #facebox h2,
   .newface h2,
   #facebox .footer {
     border-color: #555555 !important;
   }
+  #facebox .commit-preview,
   .newface .commit-preview {
     background-color: #333333 !important;
+    border-color: #555555 !important;
+  }
+  #facebox .commit-preview p.name .avatar {
+    background-color: transparent !important;
     border-color: #555555 !important;
   }
 
