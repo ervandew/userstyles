@@ -59,6 +59,12 @@
   .hx > div > div > div > div, .hx > div > div > div > div > div > div {
     background: #cfcfcf !important;
   }
+  .Bk .G2 {
+    background: #cfcfcf !important;
+    -moz-border-left-colors: #bcbcbc !important;
+    -moz-border-right-colors: #bcbcbc !important;
+    border-width: 1px !important;
+  }
 
   /* corner borders (main, folded replies) */
   .h7 > div b, .hx > div b {
