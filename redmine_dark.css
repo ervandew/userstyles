@@ -18,12 +18,15 @@
   }
 
   .box {
-    border-color: #555555 !important;
+    border-color: #555 !important;
   }
 
   #wrapper, #wrapper2, #content, #header, #main, #top-menu, #footer, #footer .bgl, #footer .bgr {
     background: transparent !important;
     color: #bbb !important;
+  }
+  #footer {
+    border-color: #333 !important;
   }
 
   #main, #main > #content {
@@ -31,7 +34,7 @@
     padding-top: 0 !important;
   }
   #header {
-    height: 60px !important;
+    /*height: 60px !important;*/
     padding-bottom: 0 !important;
   }
   #main > #content > h2 {
@@ -46,10 +49,21 @@
     border: none !important;
     width: 99% !important;
   }
-
   #sidebar {
+    margin-left: 10px !important;
+    width: 99% !important;
+    float: none !important;
+  }
+  #sidebar h3 {
+    margin-top: 5px !important;
+    border: none !important;
+  }
+  #sidebar br {
     display: none !important;
-    width: 0% !important;
+  }
+  #sidebar a {
+    padding-right: 5px !important;
+    border-right: 1px solid #333 !important;
   }
 
   #login-form {
@@ -58,6 +72,12 @@
 
   h2, .wiki h1, h3, .wiki h2, h4, .wiki h3, legend {
     color: #bbb !important;
+  }
+  h2 {
+    border: none !important;
+  }
+  h3 {
+    border-color: #333 !important;
   }
 
   a, a:link, a:visited {
@@ -93,30 +113,6 @@
     border: 1px solid #3f3f3f !important;
   }
 
-  form[action="/issues"] table.list tr th:first-child, /* checkbox */
-  form[action="/issues"] table.list tr td:first-child
-  {
-    display: none !important;
-  }
-
-  table.list tr th[title="Sort by \"Tracker\""], /* ticket type */
-  table.list tr td.tracker,
-  table.list tr th[title="Sort by \"Target version\""], /* target version */
-  table.list tr td.fixed_version,
-  table.list tr th[title="Sort by \"Start\""], /* start date */
-  table.list tr td.start_date,
-  table.list tr th[title="Sort by \"Updated\""], /* updated date */
-  table.list tr td.updated_on,
-  table.list tr th[title="Sort by \"Due date\""], /* due date */
-  table.list tr td.due_date,
-  table.list tr th[title="Sort by \"Due date\""] + th, /* review req*/
-  table.list tr td.cf_3,
-  table.list tr th:last-child, /* update sql or py */
-  table.list tr td.cf_4
-  {
-    display: none !important;
-  }
-
   tr.odd {
     background: transparent !important;
     border-color: #3f3f3f !important;
@@ -131,28 +127,51 @@
     background: #333 !important;
   }
 
-  tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover {
+  tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover {
     color: #bbb !important;
     font-weight: normal !important;
   }
-  tr.odd.priority-5 {
+  tr.odd.priority-1 {
     background: transparent !important;
   }
-  tr.even.priority-5, table.list tbody tr.even.priority-5:hover {
+  tr.even.priority-1, table.list tbody tr.even.priority-1:hover {
     color: #bbb !important;
     font-weight: normal !important;
   }
-  tr.even.priority-5 {
+  tr.even.priority-1 {
     background: transparent !important;
   }
-  tr.priority-5 a, tr.priority-5:hover a {
+  tr.priority-1 a, tr.priority-1:hover a {
     color: #d2a8a8 !important;
   }
-  tr.odd.priority-5 td, tr.even.priority-5 td {
+  tr.odd.priority-1 td, tr.even.priority-1 td {
     border-color: #3f3f3f !important;
   }
-  table.list tbody tr.odd.priority-5:hover,
-  tr.priority-5:hover {
+  table.list tbody tr.odd.priority-1:hover,
+  tr.priority-1:hover {
+    background: #333 !important;
+  }
+
+  tr.odd.priority-2, table.list tbody tr.odd.priority-2:hover {
+    color: #bbb !important;
+  }
+  tr.odd.priority-2 {
+    background: transparent !important;
+  }
+  tr.even.priority-2, table.list tbody tr.even.priority-2:hover {
+    color: #bbb !important;
+  }
+  tr.even.priority-2 {
+    background: transparent !important;
+  }
+  tr.priority-2 a {
+    color: #994444 !important;
+  }
+  tr.odd.priority-2 td, tr.even.priority-2 td {
+    border-color: #3f3f3f !important;
+  }
+  table.list tbody tr.odd.priority-2:hover,
+  tr.priority-2:hover {
     background: #333 !important;
   }
 
@@ -169,59 +188,13 @@
     background: transparent !important;
   }
   tr.priority-4 a {
-    color: #d2a8a8 !important;
+    color: #808080 !important;
   }
   tr.odd.priority-4 td, tr.even.priority-4 td {
     border-color: #3f3f3f !important;
   }
   table.list tbody tr.odd.priority-4:hover,
   tr.priority-4:hover {
-    background: #333 !important;
-  }
-
-  tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover {
-    color: #bbb !important;
-  }
-  tr.odd.priority-3 {
-    background: transparent !important;
-  }
-  tr.even.priority-3, table.list tbody tr.even.priority-3:hover {
-    color: #bbb !important;
-  }
-  tr.even.priority-3 {
-    background: transparent !important;
-  }
-  tr.priority-3 a {
-    color: #994444 !important;
-  }
-  tr.odd.priority-3 td, tr.even.priority-3 td {
-    border-color: #3f3f3f !important;
-  }
-  table.list tbody tr.odd.priority-3:hover,
-  tr.priority-3:hover {
-    background: #333 !important;
-  }
-
-  tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover {
-    color: #bbb !important;
-  }
-  tr.odd.priority-1 {
-    background: transparent !important;
-  }
-  tr.even.priority-1, table.list tbody tr.even.priority-1:hover {
-    color: #bbb !important;
-  }
-  tr.even.priority-1 {
-    background: transparent !important;
-  }
-  tr.priority-1 a {
-    color: #808080 !important;
-  }
-  tr.odd.priority-1 td, tr.even.priority-1 td {
-    border-color: #3f3f3f !important;
-  }
-  table.list tbody tr.odd.priority-1:hover,
-  tr.priority-1:hover {
     background: #333 !important;
   }
 
