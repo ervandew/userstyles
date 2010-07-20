@@ -65,6 +65,12 @@
     padding-right: 5px !important;
     border-right: 1px solid #333 !important;
   }
+  #sidebar li {
+    display: inline !important;
+  }
+  #sidebar ins {
+    display: none !important;
+  }
 
   #login-form {
     color: #000 !important;
@@ -92,6 +98,10 @@
     background-color: #bbb !important;
   }
 
+  #version-summary {
+    background-color: transparent !important;
+  }
+
   .box {
     background-color: transparent !important;
     color: #bbb !important;
@@ -109,94 +119,34 @@
     border: 1px solid #3f3f3f !important;
   }
 
-  table.list tbody td, table.list tbody tr:hover td {
+  table.list tbody td {
+    border: 1px solid #3f3f3f !important;
+  }
+  table.list tbody tr:hover, table.list tbody tr:hover td {
+    background: #333 !important;
     border: 1px solid #3f3f3f !important;
   }
 
-  tr.odd {
+  tr.odd, tr.even {
     background: transparent !important;
     border-color: #3f3f3f !important;
   }
-
-  tr.even {
-    background: transparent !important;
-    border-color: #3f3f3f !important;
-  }
-
   tr.odd:hover, tr.even:hover {
     background: #333 !important;
   }
 
-  tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover {
-    color: #bbb !important;
-    font-weight: normal !important;
-  }
-  tr.odd.priority-1 {
-    background: transparent !important;
-  }
-  tr.even.priority-1, table.list tbody tr.even.priority-1:hover {
-    color: #bbb !important;
-    font-weight: normal !important;
-  }
-  tr.even.priority-1 {
-    background: transparent !important;
-  }
-  tr.priority-1 a, tr.priority-1:hover a {
+  /* highest (pink) */
+  /*tr.priority-1 a {
     color: #d2a8a8 !important;
-  }
-  tr.odd.priority-1 td, tr.even.priority-1 td {
-    border-color: #3f3f3f !important;
-  }
-  table.list tbody tr.odd.priority-1:hover,
-  tr.priority-1:hover {
-    background: #333 !important;
-  }
-
-  tr.odd.priority-2, table.list tbody tr.odd.priority-2:hover {
-    color: #bbb !important;
-  }
-  tr.odd.priority-2 {
-    background: transparent !important;
-  }
-  tr.even.priority-2, table.list tbody tr.even.priority-2:hover {
-    color: #bbb !important;
-  }
-  tr.even.priority-2 {
-    background: transparent !important;
-  }
-  tr.priority-2 a {
+  }*/
+  /* high (red) */
+  /*tr.priority-2 a {
     color: #994444 !important;
-  }
-  tr.odd.priority-2 td, tr.even.priority-2 td {
-    border-color: #3f3f3f !important;
-  }
-  table.list tbody tr.odd.priority-2:hover,
-  tr.priority-2:hover {
-    background: #333 !important;
-  }
-
-  tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover {
-    color: #bbb !important;
-  }
-  tr.odd.priority-4 {
-    background: transparent !important;
-  }
-  tr.even.priority-4, table.list tbody tr.even.priority-4:hover {
-    color: #bbb !important;
-  }
-  tr.even.priority-4 {
-    background: transparent !important;
-  }
-  tr.priority-4 a {
+  }*/
+  /* low (gray) */
+  /*tr.priority-4 a {
     color: #808080 !important;
-  }
-  tr.odd.priority-4 td, tr.even.priority-4 td {
-    border-color: #3f3f3f !important;
-  }
-  table.list tbody tr.odd.priority-4:hover,
-  tr.priority-4:hover {
-    background: #333 !important;
-  }
+  }*/
 
   div.issue {
     background-color: #333 !important;
@@ -206,13 +156,12 @@
     white-space: nowrap !important;
   }
 
+  table.progress {
+    border-color: #555 !important;
+  }
   table.progress td.closed {
     background:#569056 none repeat scroll 0 50% !important;
   }
-
-  /*div.issue a, div.issue a:link, div.issue a:visited {
-    color: #474798 !important;
-  }*/
 
   div.wiki div.toc {
     background-color: #bbb !important;
