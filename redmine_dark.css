@@ -148,12 +148,26 @@
     color: #808080 !important;
   }*/
 
-  div.issue {
+  hr {
+    background-color: #555 !important;
+  }
+
+  div.issue, div#issue-changesets {
     background-color: #333 !important;
+    border: 1px solid #555 !important;
   }
 
   div.issue table td {
     white-space: nowrap !important;
+  }
+
+  div#issue-changesets .odd {
+    background-color: #333 !important;
+    border-color: #555 !important;
+  }
+
+  #history h4 {
+    border-color: #555 !important;
   }
 
   table.progress {
@@ -168,7 +182,12 @@
   }
 
   div.wiki pre {
+    border-color: #555 !important;
     background-color: transparent !important;
+  }
+
+  blockquote {
+    border-color: #555 !important;
   }
 
   .context-menu-selection {

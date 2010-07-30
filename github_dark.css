@@ -61,6 +61,16 @@
     color: #aaaaaa !important;
   }
 
+  .pagehead ul.tabs li.contextswitch {
+    background: none !important;
+    border-color: #555555 !important;
+  }
+  .pagehead ul.tabs li.contextswitch ul li.current,
+  .pagehead ul.tabs li.contextswitch ul {
+    background-color: #444444 !important;
+    border-color: #555555 !important;
+  }
+
   ul.bigtabs,
   ul.smalltabs {
     border-color: #555555 !important;
@@ -705,6 +715,9 @@
   }
   #issues .labels .chooser ul li a.action:hover {
     background: #555555 !important;
+  }
+  #new_issue {
+    background-color: #333 !important;
   }
 
   .explore h2,
