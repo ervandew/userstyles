@@ -719,6 +719,9 @@
   #new_issue {
     background-color: #333 !important;
   }
+  #issues .issue.selected .summary {
+    background-color: #444 !important;
+  }
 
   .explore h2,
   .explore h2.trending-heading,
