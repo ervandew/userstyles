@@ -148,8 +148,23 @@
     color: #808080 !important;
   }*/
 
+  #context-menu ul {
+    background-color: #262626 !important;
+    border-color: #555 !important;
+  }
+  #context-menu a {
+    border: none !important;
+  }
+  #context-menu a:hover {
+    background-color: #333 !important;
+  }
+
   hr {
     background-color: #555 !important;
+  }
+
+  ul.projects ul.projects {
+    border-color: #555 !important;
   }
 
   div.issue, div#issue-changesets {
