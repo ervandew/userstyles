@@ -163,6 +163,17 @@
     background-color: #555 !important;
   }
 
+  #content .tabs ul {
+    border-color: #555 !important;
+  }
+  #content .tabs ul li a.selected {
+    background-color: #333 !important;
+  }
+  #content .tabs ul li a {
+    background-color: #222 !important;
+    border-color: #555 !important;
+  }
+
   ul.projects ul.projects {
     border-color: #555 !important;
   }
@@ -233,6 +244,16 @@
 
   .diff_in {
     background: #ccffcc !important;
+  }
+
+  .gantt_hdr {
+    background-color: #333 !important;
+    border-color: #555 !important;
+  }
+
+  .task {
+    background-color: #555 !important;
+    color: #bbb !important;
   }
 
   #preview fieldset {
