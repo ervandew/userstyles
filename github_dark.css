@@ -400,7 +400,7 @@
     border-color: #555555 !important;
   }
   #network .repo img.gravatar,
-  #commit .human .actor .gravatar,
+  .actor .gravatar,
   #code_search_results .result .gravatar,
   .news .alert .gravatar,
   .news .push .commits li img,
@@ -478,6 +478,13 @@
   #commit .human .actor .name a {
     color: #aaaaaa !important;
   }
+  .actor {
+    background-color: #333 !important;
+    border-color: #555 !important;
+  }
+  .actor .name {
+    text-shadow: none !important;
+  }
 
   #browser table {
     border: 1px solid #555555 !important;
@@ -540,8 +547,7 @@
   #files .file .meta,
   #files .file .data .line_numbers,
   #files .file .data,
-  .syntax .gc,
-  .gist-syntax .gc {
+  .gc {
     background: transparent !important;
     border-color: #555555 !important;
     color: #777777 !important;
@@ -557,51 +563,29 @@
   #files.commentable tr.inline-comments:hover td {
     background-color: transparent !important;
   }
-  .syntax .gd,
-  .gist-syntax .gd {
+  .gd {
     background-color: #ca7d7d !important;
   }
-  .syntax .gi,
-  .gist-syntax .gi {
+  .gi {
     background-color: #76b576 !important;
   }
-  .syntax .nn,
-  .gist-syntax .nn {
+  .nn {
     color: #777777 !important;
   }
-  .syntax .nf,
-  .syntax .sr,
-  .syntax .mi,
-  .syntax .mf,
-  .syntax .na,
-  .gist-syntax .nf,
-  .gist-syntax .sr,
-  .gist-syntax .mi,
-  .gist-syntax .mf,
-  .gist-syntax .na {
+  .nf, .sr, .mi, .mf, .na {
     color: #8eb157 !important;
   }
-  .syntax .nt,
-  .syntax .no,
-  .gist-syntax .nt,
-  .gist-syntax .no {
+  .nt, .no {
     color: #6699cc !important;
   }
-  .syntax .nc,
-  .gist-syntax .nc,
-  .syntax .kt,
-  .gist-syntax .kt {
+  .nc, .kt {
     color: #5e76bc !important;
   }
-  .syntax .s,
-  .syntax .ss,
-  .syntax .s1,
-  .syntax .s2,
-  .gist-syntax .s,
-  .gist-syntax .ss,
-  .gist-syntax .s1,
-  .gist-syntax .s2 {
+  .s, .ss, .s1, .s2 {
     color: #9e6c8d !important;
+  }
+  .highlight {
+    background: none !important;
   }
 
   .commentstyle {
