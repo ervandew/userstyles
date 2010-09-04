@@ -623,6 +623,39 @@
     border-color: #555555 !important;
   }
 
+  .filterbox {
+    background: none !important;
+    border: none !important;
+  }
+
+  ul.bignav li a:hover,
+  ul.bignav li a:hover .count,
+  ul.smallnav li a:hover,
+  ul.smallnav li a:hover .count{
+    background: #ccc !important;
+    color: #222 !important;
+  }
+
+  .browser-content,
+  .browser .none, .browser .error,
+  .browser-content .filterbar {
+    background: none !important;
+    border-color: #555555 !important;
+  }
+  .browser-content .footerbar p,
+  .filterbar ul.filters li {
+    text-shadow: none !important;
+  }
+  .filterbar ul.filters li {
+    background: none !important;
+    border: none !important;
+  }
+  .filterbar ul.filters li.selected {
+    background: #555555 !important;
+    border: 1px solid #777777 !important;
+    color: #000000 !important;
+  }
+
   .pagehead ul.actions a.feed {
     background-color: transparent !important;
     border-color: #555555 !important;
