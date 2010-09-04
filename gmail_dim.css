@@ -133,6 +133,11 @@
     background: transparent !important;
   }
 
+  /* empty div for important / starred message lists */
+  .qd {
+    background: #cfcfcf !important;
+  }
+
   /* quoted message */
   blockquote.gmail_quote {
     border-left: 1px solid #333333 !important;
