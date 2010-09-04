@@ -958,7 +958,12 @@
     color: #777777 !important;
   }
 
-  #header a.logo img {
+  #header div.logo {
+    margin-top: 10px !important;
+  }
+  #header a.logo img,
+  img[src$="help.github.png"],
+  img[src$="logo_gist.png"] {
     background-color: #333 !important;
     border: 1px solid #555 !important;
     -moz-border-radius: 5px !important;
