@@ -41,14 +41,16 @@
     color: #cccccc !important;
   }
 
-  .userbox {
+  .userbox,
+  ul.nav.logged_out {
     border-color: #333 !important;
+    text-shadow: none !important;
   }
   .userbox .avatarname img,
   .pagehead h1.avatared img {
     border-color: #777777 !important;
   }
-  .userbox, .userbox .inner {
+  .userbox, .userbox .inner, ul.nav.logged_out {
     background: none !important;
   }
   #header .userbox .avatarname a {
