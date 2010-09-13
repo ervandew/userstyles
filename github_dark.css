@@ -748,6 +748,62 @@
   #issues .issue.selected .summary {
     background-color: #444 !important;
   }
+  .issue .summary .meta {
+    width: 37.6em !important;
+  }
+  .issue .handles {
+    width: 3.6em !important;
+  }
+
+  #commit .commit_oneline {
+    background: none !important;
+  }
+  #commit .commit_oneline td {
+    border-color: #555 !important;
+  }
+  #commit .commit_oneline .author a,
+  #commit .commit_oneline .message a {
+    color: #777 !important
+  }
+  #commit .commit_oneline .gravatar img,
+  #forkqueue table td.author img {
+    background-color: transparent !important;
+    border-color: #555555 !important;
+  }
+  #forkqueue table {
+    border-color: #555 !important;
+  }
+  #forkqueue table th,
+  #forkqueue table tr td {
+    background-color: transparent !important;
+    border-color: #555 !important;
+  }
+  #forkqueue table td.message a {
+    color: #aaa !important;
+  }
+  #forkqueue table tr.clean td.message a,
+  #forkqueue table tr.unclean td.message a {
+    color: #222 !important;
+  }
+  #forkqueue .clean,
+  #forkqueue table tr.clean td,
+  #forkqueue .unclean,
+  #forkqueue table tr.unclean td {
+    color: #222 !important;
+    border-color: #555 !important;
+  }
+  #forkqueue table tr.clean td a,
+  #forkqueue table tr.unclean td a {
+    color: #2b5680 !important;
+  }
+  #forkqueue .clean,
+  #forkqueue table tr.clean td {
+    background: #76b576 !important;
+  }
+  #forkqueue .unclean,
+  #forkqueue table tr.unclean td {
+    background: #ca7d7d !important;
+  }
 
   .explore h2,
   .explore h2.trending-heading,
