@@ -81,11 +81,17 @@
   }
 
   ul.bigtabs,
-  ul.smalltabs {
-    border-color: #555555 !important;
+  ul.smalltabs,
+  ul.smalltabs .counter {
+    border-color: #555 !important;
   }
-  ul.smalltabs {
-    background: #333333 !important;
+  ul.smalltabs,
+  ul.smalltabs .counter {
+    background: #333 !important;
+  }
+  ul.smalltabs a.selected .counter {
+    border-color: #333 !important;
+    background: #555 !important;
   }
 
   .subnav-bar > ul > li:hover > a.dropdown,
@@ -175,6 +181,10 @@
   ul.repo-stats li a {
     background-color: #333333 !important;
     border-color: #555555 !important;
+  }
+
+  .commit-ref {
+    text-shadow: none !important;
   }
 
   #facebox .close {
@@ -656,6 +666,36 @@
     background: #555555 !important;
     border: 1px solid #777777 !important;
     color: #000000 !important;
+  }
+
+  .pull-description img,
+  .commits-condensed span.gravatar,
+  .new-comments .comment .cmeta .gravatar,
+  ul.userlist li .gravatar {
+    background-color: transparent !important;
+    border-color: #555555 !important;
+  }
+  .starting-comment .meta .title h2 {
+    text-shadow: none !important;
+  }
+  .starting-comment .meta .state {
+    background-color: #333 !important;
+    border-color: #555555 !important;
+  }
+  .comments-wrapper {
+    background-color: transparent !important;
+  }
+  .commits-condensed,
+  .commits-condensed td {
+    border-color: #555555 !important;
+  }
+  .commits-condensed td.author a,
+  .commits-condensed td.message a {
+    color: #777 !important;
+  }
+  ul.userlist,
+  ul.userlist li {
+    border-color: #555555 !important;
   }
 
   .pagehead ul.actions a.feed {
