@@ -654,6 +654,20 @@
     background: none !important;
     border-color: #555555 !important;
   }
+  .browser .listing {
+    background-color: transparent !important;
+    border-color: #555555 !important;
+  }
+  .browser .listing.active {
+    background-color: #2b2b2b !important;
+  }
+  .browser .unread h3 a {
+    color: #777 !important;
+  }
+  .browser .listing .meta {
+    background-color: #444 !important;
+    text-shadow: none !important;
+  }
   .browser-content .footerbar p,
   .filterbar ul.filters li {
     text-shadow: none !important;
@@ -742,6 +756,9 @@
   #issues .summary:hover {
     background-color: #444 !important;
   }
+  #issues .keyboard-shortcuts {
+    background-color: transparent !important;
+  }
   .issue h3 a {
     color: #aaaaaa !important;
   }
@@ -793,6 +810,16 @@
   }
   .issue .handles {
     width: 3.6em !important;
+  }
+  .attached-pull {
+    background: #333 !important;
+    border-color: #555555 !important;
+  }
+  .attached-pull a {
+    text-shadow: none !important;
+  }
+  .attached-pull a strong {
+    color: #777 !important;
   }
 
   #commit .commit_oneline {
