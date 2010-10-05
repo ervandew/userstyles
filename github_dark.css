@@ -325,12 +325,14 @@
   }
   ul.clone-urls li.selected > a {
     background: #777777 !important;
+    border: none !important;
     color: #222222 !important;
   }
   ul.clone-urls li > a {
     background: none !important;
-    text-shadow: none !important;
+    border: none !important;
     color: #777777 !important;
+    text-shadow: none !important;
   }
   input.url-field {
     background-color: transparent !important;
@@ -450,8 +452,12 @@
   #readme.announce div.plain, #readme.announce div.wikistyle {
     border: 1px solid #555555 !important;
   }
+  .wikistyle {
+    color: #bbb !important;
+  }
   .wikistyle h2 {
     border-top: 4px solid #555555 !important;
+    color: #bbb !important;
   }
   .wikistyle pre,
   .wikistyle pre code,
@@ -799,7 +805,7 @@
   #issues .labels .chooser ul li a.action:hover {
     background: #555555 !important;
   }
-  #new_issue {
+  #new_issue, .edit_issue {
     background-color: #333 !important;
   }
   #issues .issue.selected .summary {
