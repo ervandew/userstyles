@@ -212,6 +212,11 @@
     background-color: transparent !important;
   }
 
+  div.wiki code .no {
+    background-color: transparent !important;
+    border-right: 1px solid #555 !important;
+  }
+
   blockquote {
     border-color: #555 !important;
   }
