@@ -17,9 +17,13 @@
     color: #bbb !important;
   }
 
+  * {
+    border-color: #555555 !important;
+    text-shadow: none !important;
+  }
+
   input, textarea, select {
     background: #aaaaaa !important;
-    border-color: #555555 !important;
     color: #222222 !important;
   }
 
@@ -44,7 +48,6 @@
   .userbox,
   ul.nav.logged_out {
     border-color: #333 !important;
-    text-shadow: none !important;
   }
   .userbox .avatarname img,
   .pagehead h1.avatared img {
@@ -72,19 +75,12 @@
 
   .pagehead ul.tabs li.contextswitch {
     background: none !important;
-    border-color: #555555 !important;
   }
   .pagehead ul.tabs li.contextswitch ul li.current,
   .pagehead ul.tabs li.contextswitch ul {
     background-color: #444444 !important;
-    border-color: #555555 !important;
   }
 
-  ul.bigtabs,
-  ul.smalltabs,
-  ul.smalltabs .counter {
-    border-color: #555 !important;
-  }
   ul.smalltabs,
   ul.smalltabs .counter {
     background: #333 !important;
@@ -100,15 +96,9 @@
   ul.bigtabs li a,
   ul.smalltabs li a {
     background: #333333 !important;
-    border-color: #555555 !important;
-    text-shadow: none !important;
   }
   .subnav-bar > ul > li:hover > a.dropdown {
     color: #cccccc !important;
-  }
-
-  .subnav-bar > ul > li > ul > li {
-    border-color: #555555 !important;
   }
 
   .pagehead ul.tabs li a:hover,
@@ -118,13 +108,6 @@
   ul.bigtabs li a:hover {
     background: #999999 !important;
     color: #222222 !important;
-    border-color: #555555 !important;
-  }
-
-  #header .userbox a,
-  .pagehead h1,
-  .pagehead ul.tabs li a {
-    text-shadow: none !important;
   }
 
   .standard_form {
@@ -141,28 +124,18 @@
     background: #555555 !important;
     border-color: #777777 !important;
     color: #000000 !important;
-    text-shadow: none !important;
-  }
-
-  .subnavd .pagehead ul.tabs, .pagehead.repohead ul.tabs {
-    border-color: #555555 !important;
   }
 
   .subnav-bar,
   .pagehead ul.tabs,
   .pagehead ul.tabs li.contextswitch.nochoices {
     background: none !important;
-    border-color: #555555 !important;
   }
 
   .subnav-bar {
     border: none !important;
   }
 
-  .pagination a,
-  .pagination span.disabled {
-    border-color: #555555 !important;
-  }
   .pagination a:hover {
     color: #4183c4 !important;
   }
@@ -170,7 +143,6 @@
   ul.repo-stats {
     background: none !important;
     background-color: #333333 !important;
-    border-color: #555555 !important;
   }
   ul.repo-stats li:first-child {
     height: 21px !important;
@@ -180,11 +152,6 @@
   ul.repo-stats li,
   ul.repo-stats li a {
     background-color: #333333 !important;
-    border-color: #555555 !important;
-  }
-
-  .commit-ref {
-    text-shadow: none !important;
   }
 
   #facebox .close {
@@ -197,33 +164,20 @@
   .newface .commit-preview .message pre,
   #facebox pre {
     background: #222222 !important;
-    border-color: #555555 !important;
     color: #777777 !important;
-  }
-  #facebox h2,
-  .newface h2,
-  #facebox .footer {
-    border-color: #555555 !important;
   }
   #facebox .commit-preview,
   .newface .commit-preview {
     background-color: #333333 !important;
-    border-color: #555555 !important;
   }
   #facebox .commit-preview p.name .avatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   .commentstyle .comment .meta .gravatar,
   #compare .commits span.gravatar,
   .new-comments .comment .cmeta .gravatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
-  }
-  #compare .commits,
-  #compare .commits td {
-    border-color: #555555 !important;
   }
   #compare .commits td.author a,
   #compare .commits td.message a {
@@ -238,20 +192,11 @@
   .new-comments .inset,
   .line-comments {
     background-color: transparent !important;
-    border-color: #555555 !important;
-  }
-  .new-comments .comment,
-  .new-comments .comment .cmeta {
-    border-color: #555555 !important;
   }
   .new-comments .comment .cmeta,
   .new-comments .commit-comment .cmeta,
   .new-comments .file-commit-comment .cmeta {
     background: #555555 !important;
-  }
-  .new-comments .comment .cmeta p.author,
-  .new-comments .comment .cmeta p.info em.date {
-    text-shadow: none !important;
   }
   .new-comments .comment .cmeta p.author em a {
     color: #222222 !important;
@@ -279,30 +224,27 @@
   }
   ul.clone-urls li > a {
     background: none !important;
-    text-shadow: none !important;
     color: #777777 !important;
   }*/
 
-  table.branches th,
-  table.branches tr td {
-    border-color: #555555 !important;
-  }
   table.branches tr:hover td {
     background: #333333 !important;
   }
 
   .minibutton,
+  #download_button,
   .compare-range .commit {
     -moz-border-radius: 3px 3px 3px 3px !important;
+    -moz-box-shadow: none !important;
     background: #333333 !important;
     border: 1px solid #555555 !important;
-    text-shadow: none !important;
     color: #777777 !important;
   }
   .minibutton > span {
     background: none !important;
   }
   .minibutton:hover,
+  #download_button:hover,
   ul.repo-stats li.watchers a:hover,
   ul.repo-stats li.forks a:hover,
   .compare-range a.commit:hover {
@@ -332,26 +274,16 @@
     background: none !important;
     border: none !important;
     color: #777777 !important;
-    text-shadow: none !important;
   }
   input.url-field {
     background-color: transparent !important;
-    border-color: #555555 !important;
     height: 18px !important;
     color: #aaaaaa !important;
-  }
-
-  #watchers,
-  #watchers li {
-    border-color: #555555 !important;
   }
 
   #inbox .list .unread,
   #message .envelope .header .info .title.unread {
     background-color: #323232 !important;
-  }
-  #inbox .list .item {
-    border-color: #555555 !important;
   }
   #inbox .list .item .details .message a.body {
     color: #aaaaaa !important;
@@ -363,13 +295,11 @@
   #inbox .list .item .gravatar,
   #message .envelope .header .gravatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   #repos .public,
   #repos .private {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   #path #clippy {
@@ -380,9 +310,6 @@
     background: transparent !important;
     color: #aaaaaa !important;
     border: 1px solid #555555 !important;
-  }
-  .metabox .rule, .standard_form {
-    border-color: #555555 !important;
   }
   .metabox .editable-text:hover {
     color: #222222 !important;
@@ -403,15 +330,11 @@
 
   #downloads .upload {
     background: transparent !important;
-    border-color: #555555 !important;
   }
 
   .news .alert .title span {
     background-color: transparent !important;
     color: #FFF6A9 !important;
-  }
-  .news .alert .body {
-    border-color: #555555 !important;
   }
   #network .repo img.gravatar,
   .actor .gravatar,
@@ -422,7 +345,6 @@
   #directory .repo .gravatar img,
   .members li .gravatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   #author_text,
   #selected_author_text {
@@ -432,7 +354,6 @@
   #code_search_results .header,
   #code_search_results .result .snippet {
     background-color: #333333 !important;
-    border-color: #555555 !important;
     color: #aaaaaa !important;
   }
   #code_search_results .result .snippet em {
@@ -470,22 +391,14 @@
   .gist .gist-file .gist-data {
     background-color: #444444 !important;
     color: #aaaaaa !important;
-    border-color: #555555 !important;
-  }
-  .wikistyle blockquote {
-    border-color: #555555 !important;
   }
   .gist .gist-file .gist-meta {
     background-color: #333333 !important;
     color: #aaaaaa !important;
-    border-color: #555555 !important;
   }
 
   #commit .group {
     border: none !important;
-  }
-  #commit .machine {
-    border-color: #555555 !important;
   }
   #commit .envelope {
     background: transparent !important;
@@ -498,10 +411,6 @@
   }
   .actor {
     background-color: #333 !important;
-    border-color: #555 !important;
-  }
-  .actor .name {
-    text-shadow: none !important;
   }
 
   #browser table {
@@ -509,25 +418,13 @@
   }
   #browser table th {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   #browser table td {
     background: none !important;
-    border-color: #555555 !important;
     color: #777777 !important;
   }
   #browser table td a.message {
     color: #aaaaaa !important;
-  }
-
-  #header, .admin #header,
-  #footer, .locales,
-  .columns .sidebar,
-  .original-post,
-  .original-post .meta,
-  ol#comments li .body,
-  ul.states li {
-    border-color: #555555 !important;
   }
 
   ol#comments li .body {
@@ -542,23 +439,13 @@
   .original-post .avatar,
   ol#comments li .avatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   .blame .line-data {
     background-color: #333333 !important;
-    border-color: #555555 !important;
   }
   .blame .line-number {
     background-color: #666666 !important;
-    border-color: #555555 !important;
-  }
-  .blame table tr.section-first td {
-    border-color: #555555 !important;
-  }
-
-  table#toc, #toc td {
-    border-color: #555555 !important;
   }
 
   #files .file,
@@ -567,13 +454,10 @@
   #files .file .data,
   .gc {
     background: transparent !important;
-    border-color: #555555 !important;
     color: #777777 !important;
-    text-shadow: none !important;
   }
   #files .file .meta .info span.icon {
     background: transparent !important;
-    border-color: #555555 !important;
   }
   #files.commentable tr:hover td {
     background-color: #333 !important;
@@ -608,7 +492,6 @@
 
   .commentstyle {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   #dashboard .repos {
@@ -619,16 +502,11 @@
   #dashboard .filter-bar,
   #dashboard .repos .bottom-bar {
     background: none !important;
-    border-color: #555555 !important;
   }
 
   #dashboard ul.repo_list .public,
   .userrepos ul.repo_list li {
     background-color: transparent !important;
-    border-color: #555555 !important;
-  }
-  .userrepos ul.repo_list {
-    border-color: #555555 !important;
   }
   #dashboard .filter-bar li a.filter_selected {
     color: #cccccc !important;
@@ -638,7 +516,6 @@
   }
   #dashboard ul.repo_list .private {
     background-color: #333333 !important;
-    border-color: #555555 !important;
   }
 
   .filterbox {
@@ -658,11 +535,9 @@
   .browser .none, .browser .error,
   .browser-content .filterbar {
     background: none !important;
-    border-color: #555555 !important;
   }
   .browser .listing {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   .browser .listing.active {
     background-color: #2b2b2b !important;
@@ -672,11 +547,6 @@
   }
   .browser .listing .meta {
     background-color: #444 !important;
-    text-shadow: none !important;
-  }
-  .browser-content .footerbar p,
-  .filterbar ul.filters li {
-    text-shadow: none !important;
   }
   .filterbar ul.filters li {
     background: none !important;
@@ -693,34 +563,20 @@
   .new-comments .comment .cmeta .gravatar,
   ul.userlist li .gravatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
-  }
-  .starting-comment .meta .title h2 {
-    text-shadow: none !important;
   }
   .starting-comment .meta .state {
     background-color: #333 !important;
-    border-color: #555555 !important;
   }
   .comments-wrapper {
     background-color: transparent !important;
-  }
-  .commits-condensed,
-  .commits-condensed td {
-    border-color: #555555 !important;
   }
   .commits-condensed td.author a,
   .commits-condensed td.message a {
     color: #777 !important;
   }
-  ul.userlist,
-  ul.userlist li {
-    border-color: #555555 !important;
-  }
 
   .pagehead ul.actions a.feed {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   ul.repositories > li,
@@ -728,7 +584,6 @@
   ul.repositories > li .body .graph,
   ul.repositories .meta {
     background: none !important;
-    border-color: #555555 !important;
     color: #777777 !important;
   }
   ul.repositories p.description {
@@ -757,7 +612,6 @@
   .issue.open.read .summary,
   #issues .display .sortbar {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   #issues .summary:hover {
     background-color: #444 !important;
@@ -768,9 +622,6 @@
   .issue h3 a {
     color: #aaaaaa !important;
   }
-  .commentstyle .comment {
-    border-color: #555555 !important;
-  }
   #issues .display .admin {
     background: none !important;
     border: none !important;
@@ -778,23 +629,17 @@
   .issue.closed.read .summary {
     background-color: transparent !important;
   }
-  #issues .menu ul li {
-    border-color: #555555 !important;
-  }
   #issues .menu ul li.filter_selected {
     background: #555555 !important;
   }
   #issues .labels {
     background: none !important;
-    border-color: #555555 !important;
   }
   #issues .labels .admin {
     background: #555555 !important;
-    border-color: #555555 !important;
   }
   #issues .labels .list li {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   #issues .labels .list li a {
     color: #aaaaaa !important;
@@ -819,10 +664,6 @@
   }
   .attached-pull {
     background: #333 !important;
-    border-color: #555555 !important;
-  }
-  .attached-pull a {
-    text-shadow: none !important;
   }
   .attached-pull a strong {
     color: #777 !important;
@@ -831,9 +672,6 @@
   #commit .commit_oneline {
     background: none !important;
   }
-  #commit .commit_oneline td {
-    border-color: #555 !important;
-  }
   #commit .commit_oneline .author a,
   #commit .commit_oneline .message a {
     color: #777 !important
@@ -841,15 +679,10 @@
   #commit .commit_oneline .gravatar img,
   #forkqueue table td.author img {
     background-color: transparent !important;
-    border-color: #555555 !important;
-  }
-  #forkqueue table {
-    border-color: #555 !important;
   }
   #forkqueue table th,
   #forkqueue table tr td {
     background-color: transparent !important;
-    border-color: #555 !important;
   }
   #forkqueue table td.message a {
     color: #aaa !important;
@@ -863,7 +696,6 @@
   #forkqueue .unclean,
   #forkqueue table tr.unclean td {
     color: #222 !important;
-    border-color: #555 !important;
   }
   #forkqueue table tr.clean td a,
   #forkqueue table tr.unclean td a {
@@ -883,7 +715,6 @@
   .explore h2.featured-heading,
   .ranked-repositories p,
   .ranked-repositories > li {
-    border-color: #555555 !important;
     color: #777777 !important;
   }
   .ranked-repositories .meta a {
@@ -895,7 +726,6 @@
   }
   .featured-callout {
     background: #555555 !important;
-    border-color: #555555 !important;
   }
   .podcast-player h3,
   .podcast-player p.description {
@@ -905,20 +735,29 @@
   #guides .guide .sidebar ul li {
     background-color: transparent !important;
   }
-  #guides .guide .sidebar,
-  #guides .admin {
-    border-color: #555555 !important;
-  }
 
   dl.form dd input {
     color: #222222 !important;
+  }
+
+  .htabs {
+    background: none !important;
+  }
+  ul.sidetabs li a.selected {
+    background: #555 !important;
+  }
+  ul.sidetabs li a:hover {
+    background: #ccc !important;
+  }
+
+  .lineoption p {
+    color: #777777 !important;
   }
 
   dl.form dt,
   ul.fieldpills li,
   .page-notifications p.notification-settings {
     color: #cccccc !important;
-    border-color: #555555 !important;
   }
   .fieldgroup .fields,
   ul.fieldpills li,
@@ -934,18 +773,10 @@
   .accountcols .main > p.overview {
     color: #777777 !important;
   }
-  .usagebars dl,
-  .usagebars p.upsell,
-  .usagebars dl dd,
-  table.notifications th,
-  table.notifications td {
-    border-color: #555555 !important;
-  }
   .avatarexplain img,
   ul.user_emails li img,
   .supportstaffer img.avatar {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
 
   .supportstaffer {
@@ -957,20 +788,9 @@
   .form.discussion-form .fieldswrap,
   .form.discussion-form .fields {
     background-color: #333333 !important;
-    border-color: #555555 !important;
-  }
-  table.discussion-listing,
-  table.discussion-listing th,
-  table.discussion-listing td {
-    border-color: #555555 !important;
   }
   table.discussion-listing a:hover {
     color: #4183c4 !important;
-  }
-  table.thread-listing,
-  table.thread-listing th,
-  table.thread-listing td {
-    border-color: #555555 !important;
   }
   table.thread-listing .odd td {
     background-color: #222222 !important;
@@ -987,17 +807,14 @@
 
   .editbox, .editbox .body {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   .editbox h1 {
     background-color: #333333 !important;
-    border-color: #555555 !important;
   }
 
   table.upgrades td,
   table.upgrades th {
     background: none !important;
-    border-color: #555555 !important;
   }
   table.upgrades tr:hover td {
     background-color: #6699cc !important;
@@ -1011,7 +828,6 @@
     -moz-border-radius: 3px 3px 3px 3px !important;
     background: #333333 !important;
     border: 1px solid #555555 !important;
-    text-shadow: none !important;
     color: #777777 !important;
   }
   button.classy span, a.button.classy span {
@@ -1022,12 +838,6 @@
     color: #222222 !important;
   }
 
-  .rule,
-  #posts .sidebar .others,
-  #posts .meta .who_when img, img.who_when,
-  #posts .entry-content img {
-    border-color: #555555 !important;
-  }
   a.action {
     color: #bb4b4b !important;
   }
@@ -1038,7 +848,6 @@
 
   .add_file {
     background-color: transparent !important;
-    border-color: #555555 !important;
   }
   .add_file:hover {
     background-color: #4183c4 !important;
@@ -1046,7 +855,6 @@
 
   h3 {
     color: #777777 !important;
-    border-color: #555555 !important;
   }
 
   #plans .header {
@@ -1054,14 +862,10 @@
     color: #222222 !important;
   }
 
-  #statusbar {
-    border-color: #555555 !important;
-  }
   .module,
   .module h2,
   .module > .inner {
     background: #333333 !important;
-    border-color: #555555 !important;
     color: #cccccc !important;
   }
   .module h2.twitter {
@@ -1108,6 +912,10 @@
 
 @-moz-document domain("develop.github.com") {
 
+  * {
+    border-color: #555555 !important;
+  }
+
   a {
     color: #4183c4 !important;
   }
@@ -1131,12 +939,10 @@
   pre {
     background-color: #444444 !important;
     color: #aaaaaa !important;
-    border-color: #555555 !important;
   }
 
   .title, .content h3 {
     background-color: transparent !important;
-    border-color: #555555 !important;
     border-bottom: 4px solid #555555 !important;
     color: #cccccc !important;
   }
