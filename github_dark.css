@@ -22,6 +22,10 @@
     text-shadow: none !important;
   }
 
+  p {
+    color: #aaa !important;
+  }
+
   input, textarea, select {
     background: #aaaaaa !important;
     color: #222222 !important;
@@ -31,7 +35,7 @@
     display: none !important;
   }
 
-  #main, #footer, .locales, .locales .fade {
+  #main, #footer, .locales, .locales .fade, .homehead .hero h1, .hero .textographic {
     background: none !important;
   }
 
@@ -39,6 +43,12 @@
   .pagehead,
   .pagehead.repohead ul.actions {
     background: none !important;
+  }
+  #footer .sponsor a,
+  .feature-overview strong,
+  .definitions h2,
+  #footer ul.sosueme li.main {
+    color: #555 !important;
   }
 
   .pagehead h1 {
