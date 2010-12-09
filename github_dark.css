@@ -51,6 +51,13 @@
     color: #555 !important;
   }
 
+  p.breadcrumb {
+    background: #333 !important;
+  }
+  p.breadcrumb a {
+    color: #ccc !important;
+  }
+
   .pagehead h1 {
     color: #cccccc !important;
   }
@@ -75,6 +82,16 @@
   #header a.unread_count.new_messages.notifications_count {
     background-color: #aece91 !important;
     color: #222222 !important;
+  }
+
+  .infotip,
+  .notification {
+    background-color: #fff6a9 !important;
+    color: #222 !important;
+  }
+  .message p,
+  .infotip p {
+    color: #222 !important;
   }
 
   #header ul.nav li a,
@@ -265,7 +282,8 @@
     background: #333333 !important;
     border-color: #777777 !important;
   }
-  ul.repo-stats li.watchers.watching a {
+  ul.repo-stats li.watchers.watching a,
+  ul.repo-stats li.forks.forked a {
     color: #aaaaaa !important;
   }
   ul.clone-urls li {
@@ -360,6 +378,10 @@
   #selected_author_text {
     color: #aaaaaa !important;
   }
+  #network .explain b {
+    color: #aaaaaa !important;
+    font-weight: bold !important;
+  }
 
   #code_search_results .header,
   #code_search_results .result .snippet {
@@ -426,14 +448,14 @@
   #browser table {
     border: 1px solid #555555 !important;
   }
-  #browser table th {
+  #browser th {
     background-color: transparent !important;
   }
-  #browser table td {
+  #browser td {
     background: none !important;
     color: #777777 !important;
   }
-  #browser table td a.message {
+  #browser td a.message {
     color: #aaaaaa !important;
   }
 
@@ -519,13 +541,18 @@
     background-color: transparent !important;
   }
   #dashboard .filter-bar li a.filter_selected {
-    color: #cccccc !important;
+    color: #ccc !important;
   }
   #dashboard .repos h2 {
-    color: #cccccc !important;
+    color: #ccc !important;
   }
   #dashboard ul.repo_list .private {
-    background-color: #333333 !important;
+    background-color: #333 !important;
+  }
+  #dashboard .message,
+  #dashboard .message p,
+  #dashboard .message blockquote {
+    color: #666 !important;
   }
 
   .filterbox {
@@ -546,8 +573,9 @@
   .browser-content .filterbar {
     background: none !important;
   }
-  .browser .listing {
-    background-color: transparent !important;
+  .browser .listing,
+  .browser .listing.closed {
+    background: none !important;
   }
   .browser .listing.active {
     background-color: #2b2b2b !important;
@@ -577,7 +605,8 @@
   .starting-comment .meta .state {
     background-color: #333 !important;
   }
-  .comments-wrapper {
+  .comments-wrapper,
+  .commits-condensed tr:nth-child(2n) td {
     background-color: transparent !important;
   }
   .commits-condensed td.author a,
@@ -587,6 +616,10 @@
 
   .pagehead ul.actions a.feed {
     background-color: transparent !important;
+  }
+
+  .addon:hover {
+    background: #333333 !important;
   }
 
   ul.repositories > li,
@@ -876,10 +909,13 @@
   .module h2,
   .module > .inner {
     background: #333333 !important;
-    color: #cccccc !important;
+    color: #ccc !important;
   }
   .module h2.twitter {
     background: url("http://status.github.com/images/twitter_logo.png") no-repeat scroll 95% 0 transparent !important;
+  }
+  .module strong {
+    color: #ccc !important;
   }
 
   #languages .popular {
@@ -903,16 +939,24 @@
     color: #777777 !important;
   }
 
+  #statusbar p {
+    color: #000 !important;
+  }
+
   #header div.logo {
     margin-top: 10px !important;
   }
   #header a.logo img,
   img[src$="help.github.png"],
-  img[src$="logo_gist.png"] {
+  img[src$="logo_gist.png"],
+  #logo a {
     background-color: #333 !important;
     border: 1px solid #555 !important;
     -moz-border-radius: 5px !important;
     padding: 5px !important;
+  }
+  #logo a {
+    height: 30px !important;
   }
 
   p.notification-settings {
