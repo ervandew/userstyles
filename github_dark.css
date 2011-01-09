@@ -84,11 +84,13 @@
     color: #222222 !important;
   }
 
+  .tip,
   .infotip,
   .notification {
     background-color: #fff6a9 !important;
     color: #222 !important;
   }
+  .tip p,
   .message p,
   .infotip p {
     color: #222 !important;
@@ -360,6 +362,9 @@
     background: transparent !important;
   }
 
+  .news blockquote p {
+    color: #444 !important;
+  }
   .news .alert .title span {
     background-color: transparent !important;
     color: #FFF6A9 !important;
