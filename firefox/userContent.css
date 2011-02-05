@@ -59,6 +59,10 @@ select {
   -moz-appearance: none !important;
 }
 
+option {
+  padding-right: 10px !important;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   border: 1px inset ThreeDFace !important;
