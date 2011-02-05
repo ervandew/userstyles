@@ -169,6 +169,13 @@
     color: #4183c4 !important;
   }
 
+  .avatar .overlay {
+    background: none !important;
+  }
+  .avatar-bubble .bubble {
+    background-color: transparent !important;
+  }
+
   ul.repo-stats {
     background: none !important;
     background-color: #333333 !important;
@@ -218,6 +225,7 @@
   #compare .commits tr.merge td {
     background: #212121 !important;
   }
+  .new-comments .starting-comment,
   .new-comments .inset,
   .line-comments {
     background-color: transparent !important;
@@ -499,6 +507,7 @@
   #files.commentable tr:hover td {
     background-color: #333 !important;
   }
+  #files .add-bubble,
   #files.commentable tr.inline-comments:hover td {
     background-color: transparent !important;
   }
@@ -617,6 +626,13 @@
   .commits-condensed td.author a,
   .commits-condensed td.message a {
     color: #777 !important;
+  }
+
+  .pull-description a {
+    color: #4183c4 !important;
+  }
+  .pull-dest-repo a {
+    background-color: transparent !important;
   }
 
   .pagehead ul.actions a.feed {
@@ -851,6 +867,9 @@
   table.thread-listing .byuser,
   table.thread-listing .byuser a {
     color: #777777 !important;
+  }
+  .discussion-stats strong {
+    color: #777 !important;
   }
 
   .editbox, .editbox .body {
