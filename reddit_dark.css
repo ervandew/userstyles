@@ -10,6 +10,14 @@
       color: #bbb !important;
   }
 
+  .message.new > .entry {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .message.recipient > .entry .noncollapsed {
+    color: #bbb !important;
+  }
+
   #sr-header-area {
     background-color: #262626 !important;
   }
