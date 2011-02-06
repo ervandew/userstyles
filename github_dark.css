@@ -582,6 +582,17 @@
     color: #222 !important;
   }
 
+  .tree-browser th {
+    background: none !important;
+  }
+  .tree-browser td {
+    background: none !important;
+    color: #bbb !important;
+  }
+  .tree-browser td a.message {
+    color: #777 !important;
+  }
+
   .browser-content,
   .browser .none, .browser .error,
   .browser-content .filterbar {
@@ -599,6 +610,9 @@
   }
   .browser .listing .meta {
     background-color: #444 !important;
+  }
+  .browser .listing .meta .gravatar {
+    background-color: transparent !important;
   }
   .filterbar ul.filters li {
     background: none !important;
