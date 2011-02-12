@@ -92,7 +92,8 @@
   }
   .tip p,
   .message p,
-  .infotip p {
+  .infotip p,
+  .octotip p {
     color: #222 !important;
   }
 
@@ -588,6 +589,9 @@
   .tree-browser td {
     background: none !important;
     color: #bbb !important;
+  }
+  .tree-browser tr.current td {
+    background-color: #333 !important;
   }
   .tree-browser td a.message {
     color: #777 !important;
