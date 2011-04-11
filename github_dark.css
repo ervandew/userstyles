@@ -274,13 +274,13 @@
   .compare-range .commit {
     -moz-border-radius: 3px 3px 3px 3px !important;
     -moz-box-shadow: none !important;
-    background: #333333 !important;
-    border: 1px solid #555555 !important;
-    color: #777777 !important;
+    background: #333 !important;
+    border: 1px solid #555 !important;
+    color: #777 !important;
   }
-  .minibutton > span {
+  /*.minibutton > span {
     background: none !important;
-  }
+  }*/
   .minibutton:hover,
   #download_button:hover,
   ul.repo-stats li.watchers a:hover,
@@ -367,8 +367,17 @@
     color: #000 !important;
   }
 
-  #downloads .upload {
+  #downloads .upload,
+  ol.download-list li:nth-child(2n) {
     background: transparent !important;
+  }
+
+  #uploaded_downloads ol li h4,
+  ol.download-list li h4 {
+    color: #aaaaaa !important;
+  }
+  #uploaded_downloads .download-stats strong {
+    color: #666 !important;
   }
 
   .news blockquote p {
@@ -382,6 +391,7 @@
   .actor .gravatar,
   #code_search_results .result .gravatar,
   .news .alert .gravatar,
+  .news .commits li img,
   .news .push .commits li img,
   #files .file .meta .gravatar,
   #directory .repo .gravatar img,
@@ -437,6 +447,12 @@
   .gist .gist-file .gist-data {
     background-color: #444444 !important;
     color: #aaaaaa !important;
+  }
+  #wiki-wrapper #template code,
+  #wiki-wrapper #template tt,
+  #wiki-wrapper #template .highlight pre,
+  #wiki-wrapper #template pre {
+    background-color: transparent !important;
   }
   .gist .gist-file .gist-meta {
     background-color: #333333 !important;
@@ -689,6 +705,14 @@
     background: url("http://github.com/images/modules/pagehead/repostat_forks.png") no-repeat scroll 1px -4px #777777 !important;
   }
 
+  #issues_next > .browser_header ul.main_nav li.selected a {
+    background-color: #555 !important;
+    border-top: 1px solid #777 !important;
+    border-left: 1px solid #777 !important;
+    border-right: 1px solid #777 !important;
+    color: #000 !important;
+  }
+
   #issues .display,
   .issue,
   .issue.open.read .summary,
@@ -702,35 +726,53 @@
     background-color: transparent !important;
   }
   .issue h3 a {
-    color: #aaaaaa !important;
+    color: #aaa !important;
   }
   #issues .display .admin {
     background: none !important;
+    border: none !important;
+  }
+  #issues_next #issues_list .main .actions {
+    background: none !important;
+    border-bottom: 1px solid #555 !important;
+  }
+  #issues_next > .browser_header ul.actions li {
     border: none !important;
   }
   .issue.closed.read .summary {
     background-color: transparent !important;
   }
   #issues .menu ul li.filter_selected {
-    background: #555555 !important;
+    background: #555 !important;
   }
   #issues .labels {
     background: none !important;
   }
   #issues .labels .admin {
-    background: #555555 !important;
+    background: #555 !important;
   }
   #issues .labels .list li {
     background-color: transparent !important;
   }
   #issues .labels .list li a {
-    color: #aaaaaa !important;
+    color: #aaa !important;
   }
   #issues .labels .chooser ul li a.action {
     background-color: #333 !important;
   }
   #issues .labels .chooser ul li a.action:hover {
-    background: #555555 !important;
+    background: #555 !important;
+  }
+  #issues_next .labels .label a {
+    background: #333 !important;
+    color: #aaa !important;
+  }
+  #issues_next .labels .label .count {
+    color: #aaa !important;
+  }
+  #issues_next .filterbar ul.sorts li.asc,
+  #issues_next .filterbar ul.sorts li.desc {
+    background-color: #aaa !important;;
   }
   #new_issue, .edit_issue {
     background-color: #333 !important;
@@ -744,11 +786,22 @@
   .issue .handles {
     width: 3.6em !important;
   }
+  #issues_next #issues_list .main .issues .issue .info p a {
+    color: #4183c4 !important;
+  }
   .attached-pull {
     background: #333 !important;
   }
   .attached-pull a strong {
     color: #777 !important;
+  }
+
+  .context-pane {
+    background-color: #222 !important;
+  }
+  .context-pane .title {
+    background: #333 !important;
+    color: #aaa !important;
   }
 
   #commit .commit_oneline {
