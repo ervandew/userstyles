@@ -191,6 +191,10 @@
     background-color: #333 !important;
     border-color: #555 !important;
   }
+  div#issue-changesets .even {
+    background-color: #444 !important;
+    border-color: #555 !important;
+  }
 
   #history h4 {
     border-color: #555 !important;
@@ -259,6 +263,15 @@
   .task {
     background-color: #555 !important;
     color: #bbb !important;
+  }
+
+  .syntaxhl .s,
+  .syntaxhl .s .dl {
+    background: transparent !important;
+    color: #aece91 !important;
+  }
+  .syntaxhl .iv {
+    color: #5884b0 !important;
   }
 
   #preview fieldset {
