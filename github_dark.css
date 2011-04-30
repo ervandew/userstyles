@@ -62,6 +62,10 @@
     color: #cccccc !important;
   }
 
+  .user-mention {
+    color: #4183C4 !important;
+  }
+
   .userbox,
   ul.nav.logged_out {
     border-color: #333 !important;
@@ -95,6 +99,9 @@
   .infotip p,
   .octotip p {
     color: #222 !important;
+  }
+  #inbox .message p {
+    color: #aaa !important;
   }
 
   #header ul.nav li a,
@@ -236,7 +243,8 @@
   .new-comments .file-commit-comment .cmeta {
     background: #555555 !important;
   }
-  .new-comments .comment .cmeta p.author em a {
+  .new-comments .comment .cmeta p.author em a,
+  .new-comments .comment .cmeta p.info em.date a {
     color: #222222 !important;
   }
   .new-comments .comment .body {
@@ -318,6 +326,10 @@
     background-color: transparent !important;
     height: 18px !important;
     color: #aaaaaa !important;
+  }
+
+  .email-quoted-reply, .email-signature-reply{
+    color: #777 !important;
   }
 
   #inbox .list .unread,
@@ -457,6 +469,24 @@
   .gist .gist-file .gist-meta {
     background-color: #333333 !important;
     color: #aaaaaa !important;
+  }
+
+  #wiki-wrapper #gollum-editor,
+  #wiki-wrapper #gollum-editor-help-list,
+  #wiki-wrapper #gollum-editor-help-wrapper {
+    background: none !important;
+  }
+  #wiki-wrapper #gollum-editor-help-parent li a.selected,
+  #wiki-wrapper #gollum-editor-help-list li a.selected {
+    background-color: #333 !important;
+    color: #aaa !important;
+  }
+  #wiki-wrapper #gollum-editor-help-parent li a:hover,
+  #wiki-wrapper #gollum-editor-help-list li a:hover {
+    background-color: #333 !important;
+  }
+  #wiki-wrapper.edit h1 strong {
+    color: #777 !important;
   }
 
   #commit .group {
@@ -738,6 +768,9 @@
   }
   #issues_next > .browser_header ul.actions li {
     border: none !important;
+  }
+  #issues_next .starting-comment .infobar {
+    background-color: #555 !important;
   }
   .issue.closed.read .summary {
     background-color: transparent !important;
