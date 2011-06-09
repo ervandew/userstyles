@@ -699,6 +699,14 @@
     background-color: transparent !important;
   }
 
+  .merge-pr .bubble {
+    background-color: #555 !important;
+  }
+  .merge-pr .mergeable.clean p.message,
+  .merge-pr .mergeable.merging p.message {
+    color: #333 !important;
+  }
+
   .pagehead ul.actions a.feed {
     background-color: transparent !important;
   }
@@ -876,6 +884,29 @@
   #forkqueue .unclean,
   #forkqueue table tr.unclean td {
     background: #ca7d7d !important;
+  }
+
+  .options-group,
+  .options-content {
+    background: transparent !important;
+  }
+  .options-content h3 {
+    background: #333 !important;
+    border-bottom: 1px solid #555 !important;
+    color: #aaa !important;
+  }
+  .options-group.dangerzone h3 {
+    background: -moz-linear-gradient(center top , #F97171, #DF3E3E) repeat scroll 0 0 transparent !important;
+    color: #222 !important;
+  }
+  .addon:hover {
+    background: transparent !important;
+  }
+  .addon h4 {
+    color: #aaa !important;
+  }
+  .add-pill-form {
+    background: transparent !important;
   }
 
   .explore h2,
