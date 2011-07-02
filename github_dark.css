@@ -40,6 +40,8 @@
   }
 
   #header,
+  #header-wrapper,
+  #wrapper,
   .pagehead,
   .pagehead.repohead ul.actions {
     background: none !important;
@@ -591,8 +593,9 @@
     background: none !important;
     border: 1px solid #555555 !important;
   }
-  #dashboard .repos .top-bar,
+  .profilecols .filter-bar,
   #dashboard .filter-bar,
+  #dashboard .repos .top-bar,
   #dashboard .repos .bottom-bar {
     background: none !important;
   }
@@ -601,8 +604,12 @@
   .userrepos ul.repo_list li {
     background-color: transparent !important;
   }
+  .profilecols .filter-bar li a.filter_selected,
   #dashboard .filter-bar li a.filter_selected {
     color: #ccc !important;
+  }
+  .profilecols .filter-bar .filter_input {
+    width: 400px !important;
   }
   #dashboard .repos h2 {
     color: #ccc !important;
@@ -749,6 +756,9 @@
     border-left: 1px solid #777 !important;
     border-right: 1px solid #777 !important;
     color: #000 !important;
+  }
+  #issues_next #issues_list .main .issues .issue.closed {
+    background: none !important;
   }
 
   #issues .display,
