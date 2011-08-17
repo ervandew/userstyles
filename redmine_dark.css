@@ -239,8 +239,14 @@
   }
 
   table.filecontent {
-    background: #ddddcc !important;
-    color: #000 !important;
+    background: #444 !important;
+    border-color: #555 !important;
+    color: #ccc !important;
+  }
+
+  table.filecontent th {
+    background: #222 !important;
+    border-color: #555 !important;
   }
 
   table.filecontent tr.spacing td {
