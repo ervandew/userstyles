@@ -35,7 +35,7 @@
     display: none !important;
   }
 
-  #main, #footer, .locales, .locales .fade, .homehead .hero h1, .hero .textographic {
+  #main, #footer, .upper_footer, .lower_footer, .locales, .locales .fade, .homehead .hero h1, .hero .textographic {
     background: none !important;
   }
 
@@ -118,6 +118,10 @@
   .pagehead ul.tabs li.contextswitch ul li.current,
   .pagehead ul.tabs li.contextswitch ul {
     background-color: #444444 !important;
+  }
+
+  .ac_odd, .ac_even {
+    color: #222 !important;
   }
 
   ul.smalltabs,
@@ -235,6 +239,10 @@
   #compare .commits tr.merge td {
     background: #212121 !important;
   }
+  .composer .starting-comment,
+  .composer .starting-comment > .body {
+    background: none !important;
+  }
   .new-comments .starting-comment,
   .new-comments .inset,
   .line-comments {
@@ -260,6 +268,9 @@
   .comment-form ul.tabs a.selected {
     background: #777777 !important;
     border: 1px solid #555555 !important;
+  }
+  .starting-comment .comment-form {
+    border: none !important;
   }
   /*ul.clone-urls li {
     background: #333333 !important;
@@ -334,6 +345,9 @@
     color: #777 !important;
   }
 
+  #inbox .write form {
+    background: none !important;
+  }
   #inbox .list .unread,
   #message .envelope .header .info .title.unread {
     background-color: #323232 !important;
@@ -617,6 +631,9 @@
   #dashboard ul.repo_list .private {
     background-color: #333 !important;
   }
+  .participation-graph {
+    background: none !important;
+  }
   #dashboard .message,
   #dashboard .message p,
   #dashboard .message blockquote {
@@ -757,6 +774,7 @@
     border-right: 1px solid #777 !important;
     color: #000 !important;
   }
+  #issues_next > .browser_header ul.actions li.selected,
   #issues_next #issues_list .main .issues .issue.closed {
     background: none !important;
   }
