@@ -843,6 +843,9 @@
   #issues_next .filterbar ul.sorts li.desc {
     background-color: #aaa !important;;
   }
+  .pane-selector .filterbar {
+    background: none !important;
+  }
   #new_issue, .edit_issue {
     background-color: #333 !important;
   }
@@ -873,6 +876,18 @@
     color: #aaa !important;
   }
 
+  .full-commit, .full-commit .commit-meta {
+    background: none !important;
+  }
+  .full-commit .authorship a {
+    color: #777 !important;
+  }
+  .full-commit .sha-block > .sha {
+    color: #777 !important;
+  }
+  .commit .commit-desc pre {
+    color: #bbb !important;
+  }
   #commit .commit_oneline {
     background: none !important;
   }
