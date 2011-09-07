@@ -876,13 +876,17 @@
     color: #aaa !important;
   }
 
-  .full-commit, .full-commit .commit-meta {
+  .full-commit, .full-commit .commit-meta,
+  .commit-tease, .commit-tease .commit-meta {
     background: none !important;
   }
-  .full-commit .authorship a {
+  .full-commit .authorship a,
+  .commit-tease .authorship a,
+  .commit .commit-title a {
     color: #777 !important;
   }
-  .full-commit .sha-block > .sha {
+  .full-commit .sha-block > .sha,
+  .commit-tease .sha-block > .sha {
     color: #777 !important;
   }
   .commit .commit-desc pre {
