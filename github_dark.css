@@ -876,14 +876,20 @@
     color: #aaa !important;
   }
 
+  h3.commit-group-heading, .commit-group, .commit-group-item, .commit-group-item .gobutton,
   .full-commit, .full-commit .commit-meta,
   .commit-tease, .commit-tease .commit-meta {
     background: none !important;
   }
+  .commit-group-item .gobutton,
+  .commit-group-item .authorship a,
   .full-commit .authorship a,
   .commit-tease .authorship a,
   .commit .commit-title a {
     color: #777 !important;
+  }
+  .commit-group-item .gobutton > .sha, .commit-group-item.selected .gobutton:hover > .sha {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJCg8SKn6TOmEAAAILSURBVCjPlZO9a1NRGMZ/9+SmMTexmmoC0SC3InXo0EEEIVA66JJMBUH9FxyKi4tTdenfkElCh4JDQvbqmEEiqAVxaCslamtNmjRtUm7u+XDoTWn6QfEZX97f+5zznudYxhgGsizLBkaACGADAjCABPpA3xjTH/Tbx8AIEHUcx83n83OJRCIbDocnlFJtz/O+1Ov10vLy8qJlWaFgiLKMMQMwNj09/XRycnJBCDHKGer1eh8qlcrczs7OOuBZgXssn8+/cF13ngskpfyxtLT0qNPp1AUQTqfTE67rvjrZuNncRSk9VLNte3x2dvYNYAvAnpmZeR4sakh/Wm0+fl/H8/2hejwef5JMJlMhwMlmswtCiATA+u+//Gy02G532Nvv0fM8NpttRmMxopHwgBdjY2PfRHCUm4PqdnuPrWaLrWaLg8CxLyUraxtIpY7cHcdJ2YDWWvtCiBGA1NXLxKKHN9jt7HPg+ziRS0xNuNih0PFMeDaglFIrQogHALdvJI8aPq9uEFURpu7cGgIBut3uJwH0G41G8axnyaSuce/u+ClQa10vl8tVAchSqbSolPp6Er4+GuecsLzUWnvCHIb7oFarPdZa1y8Kie/7r4vF4juC4GOM0bVaba1ard6XUr49h/slpXxWKBTmA0Os478q2KLI5XLpTCbzELgihPC01quFQuH9yWmn4P/RP4fM42vJAl7tAAAAAElFTkSuQmCC") no-repeat scroll 100% 5px transparent !important;
   }
   .full-commit .sha-block > .sha,
   .commit-tease .sha-block > .sha {
