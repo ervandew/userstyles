@@ -43,7 +43,9 @@
   #header-wrapper,
   #wrapper,
   .pagehead,
-  .pagehead.repohead ul.actions {
+  .pagehead.repohead ul.actions,
+  .pagehead.repohead ul.pagehead-actions,
+  .pagehead.repohead.vis-private ul.pagehead-actions {
     background: none !important;
   }
   #footer .sponsor a,
@@ -62,6 +64,13 @@
 
   .pagehead h1 {
     color: #cccccc !important;
+  }
+  .pagehead > ul.tabs li a .counter,
+  .subnav-bar ul.subnav .counter {
+    background-color: #222 !important;
+  }
+  .subnav-bar ul.subnav li a {
+    color: #999 !important;
   }
 
   .user-mention {
@@ -367,6 +376,13 @@
   #repos .public,
   #repos .private {
     background-color: transparent !important;
+  }
+
+  .subnav-bar .search .minibutton {
+    top: 0 !important;
+  }
+  .subnav-bar > ul.actions > li {
+    border: none !important;
   }
 
   #path #clippy {
@@ -765,6 +781,29 @@
   }
   ul.repositories ul.repo-stats li a.pill-forks {
     background: url("http://github.com/images/modules/pagehead/repostat_forks.png") no-repeat scroll 1px -4px #777777 !important;
+  }
+
+  .listings-layout .columns.main .content,
+  .listings-layout .columns.main .content .filterbar,
+  .listings-layout .columns.main .content .listings .actions,
+  .listings-layout .columns.main .content .listings .listing.even,
+  .listings-layout .columns.main .content .listings .listing.odd {
+    background: none !important;
+  }
+  .listings-layout .columns.main .content .filterbar .sorts li.asc,
+  .listings-layout .columns.main .content .filterbar .sorts li.desc {
+    background-color: #555 !important;
+  }
+  .listings-layout .columns.main .content .filterbar .sorts li.asc a,
+  .listings-layout .columns.main .content .filterbar .sorts li.desc a {
+    color: #000 !important;
+  }
+  .listings-layout .columns.main .content .listings .pagination span.current {
+    color: #666 !important;
+  }
+  .listings-layout .columns.main .content .listings .listing .info h3 a,
+  .listings-layout .columns.main .content .listings .listing .info p a {
+    color: #bcbcbc !important;
   }
 
   #issues_next > .browser_header ul.main_nav li.selected a {
