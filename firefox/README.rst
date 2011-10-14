@@ -4,10 +4,11 @@
 Overview
 ==================
 
-These are my firefox userChrome.css and userContent.css I use with a dark gtk
-theme with good results.
+Here is my firefox userContent.css which I use with a dark gtk theme to get a
+more readable ftp view along with dark versions of server not found, ssl cert
+warning page, etc.
 
-installing userChrome.css and userContent.css
+installing userContent.css
 ---------------------------------------------
 
 On my linux machine I simply create a symlink to these files in my firefox
@@ -15,8 +16,4 @@ profile:
 
 ::
 
-  $ ln -s ~/userstyles/firefox/user{Content,Chrome}.css ~/.mozilla/firefox/<hash>.default/chrome/
-
-Also, note the instructions in the userContent.css comments. There are a
-handful of changes I had to make to the xulrunner forms.css to counteract some
-dark gtk theme annoyances.
+  $ ln -s ~/userstyles/firefox/userContent.css ~/.mozilla/firefox/<hash>.default/chrome/
