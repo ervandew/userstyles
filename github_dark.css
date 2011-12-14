@@ -39,13 +39,38 @@
     background: none !important;
   }
 
-  #header,
-  #header-wrapper,
+  #header {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  #header a {
+    color: #bbb !important;
+  }
+
+  #header a:hover {
+    color: #4183c4 !important;
+  }
+
+  .topsearch {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  #user-links {
+    background: #333 !important;
+    border: 1px solid #555 !important;
+    box-shadow: none !important;
+  }
+
   #wrapper,
+  #header-wrapper,
   .pagehead,
   .pagehead.repohead ul.actions,
   .pagehead.repohead ul.pagehead-actions,
-  .pagehead.repohead.vis-private ul.pagehead-actions {
+  .pagehead.repohead.vis-private ul.pagehead-actions,
+  .vis-private .site, .mine .site {
     background: none !important;
   }
   #footer .sponsor a,
@@ -53,6 +78,10 @@
   .definitions h2,
   #footer ul.sosueme li.main {
     color: #555 !important;
+  }
+
+  ul.pagehead-actions a.feed {
+    background-color: #333 !important;
   }
 
   p.breadcrumb {
@@ -182,10 +211,6 @@
   .pagehead ul.tabs,
   .pagehead ul.tabs li.contextswitch.nochoices {
     background: none !important;
-  }
-
-  .subnav-bar {
-    border: none !important;
   }
 
   .pagination a:hover {
@@ -1194,10 +1219,11 @@
     color: #000 !important;
   }
 
-  #header div.logo {
+  #header div.logo { /* for gist.github.com */
     margin-top: 10px !important;
   }
-  #header a.logo img,
+  #header .logo img,
+  .site-logo img,
   img[src$="help.github.png"],
   img[src$="logo_gist.png"],
   #logo a {
@@ -1205,9 +1231,6 @@
     border: 1px solid #555 !important;
     -moz-border-radius: 5px !important;
     padding: 5px !important;
-  }
-  #logo a {
-    height: 30px !important;
   }
 
   p.notification-settings {
