@@ -489,6 +489,14 @@
     background-color: transparent !important;
     border-color: #777777 !important;
   }
+  #readme,
+  #readme .name,
+  #readme .markdown-body {
+    background: none !important;
+  }
+  #readme .name {
+    color: #bbb !important;
+  }
   #readme div.plain pre {
     color: #aaaaaa !important;
   }
@@ -505,6 +513,9 @@
     border-top: 4px solid #555555 !important;
     color: #bbb !important;
   }
+  .markdown-body pre,
+  .markdown-body pre code,
+  .markdown-body code,
   .wikistyle pre,
   .wikistyle pre code,
   .wikistyle code,
@@ -694,6 +705,7 @@
     color: #222 !important;
   }
 
+  .bubble,
   .tree-browser th {
     background: none !important;
   }
@@ -942,6 +954,7 @@
 
   h3.commit-group-heading, .commit-group, .commit-group-item, .commit-group-item .gobutton,
   .full-commit, .full-commit .commit-meta,
+  .full-commit .browse-button,
   .commit-tease, .commit-tease .commit-meta {
     background: none !important;
   }
