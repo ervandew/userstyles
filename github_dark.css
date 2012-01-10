@@ -516,6 +516,7 @@
   .markdown-body pre,
   .markdown-body pre code,
   .markdown-body code,
+  .markdown-body tt,
   .wikistyle pre,
   .wikistyle pre code,
   .wikistyle code,
@@ -527,6 +528,13 @@
   .gist .gist-file .gist-data {
     background-color: #444444 !important;
     color: #aaaaaa !important;
+  }
+  .markdown-body table tr,
+  .markdown-body table tr:nth-child(2n) {
+    background: none !important;
+  }
+  .markdown-body table {
+    border: 1px solid #555 !important;
   }
   #wiki-wrapper #template code,
   #wiki-wrapper #template tt,
