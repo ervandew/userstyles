@@ -889,8 +889,11 @@
   #issues_next > .browser_header ul.actions li {
     border: none !important;
   }
-  #issues_next .starting-comment .infobar {
+  .starting-comment .infobar {
     background-color: #555 !important;
+  }
+  .starting-comment .infobar .text {
+    color: #222 !important;
   }
   .issue.closed.read .summary {
     background-color: transparent !important;
