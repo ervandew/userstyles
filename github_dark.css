@@ -326,7 +326,8 @@
 
   .minibutton,
   #download_button,
-  .compare-range .commit {
+  .compare-range .commit,
+  #wiki-wrapper #head ul.wiki-actions a {
     -moz-border-radius: 3px 3px 3px 3px !important;
     -moz-box-shadow: none !important;
     background: #333 !important;
@@ -340,7 +341,8 @@
   #download_button:hover,
   ul.repo-stats li.watchers a:hover,
   ul.repo-stats li.forks a:hover,
-  .compare-range a.commit:hover {
+  .compare-range a.commit:hover,
+  #wiki-wrapper #head ul.wiki-actions a:hover {
     background-color: #6699cc !important;
     color: #222222 !important;
   }
@@ -562,6 +564,21 @@
     background-color: #333 !important;
   }
   #wiki-wrapper.edit h1 strong {
+    color: #777 !important;
+  }
+
+  #wiki-history table img,
+  #wiki-history tbody img,
+  #wiki-history table tr,
+  #wiki-history tbody tr,
+  #wiki-history table tr:nth-child(2n),
+  #wiki-history table table tr.alt-row,
+  #wiki-history tbody tr:nth-child(2n),
+  #wiki-history tbody table tr.alt-row {
+    background-color: transparent !important;
+  }
+  #wiki-history table td.author a,
+  #wiki-history tbody td.author a {
     color: #777 !important;
   }
 
