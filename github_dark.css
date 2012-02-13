@@ -22,6 +22,12 @@
     text-shadow: none !important;
   }
 
+  /* fixes 404 page (and maybe other non-200 pages) until github fixes it
+   * themselves (broken after intro of skinny header) */
+  .site {
+    margin-top: 0px !important;
+  }
+
   p {
     color: #aaa !important;
   }
@@ -100,6 +106,7 @@
   }
   .subnav-bar ul.subnav li a {
     color: #999 !important;
+    padding: 8px 12px !important;
   }
 
   .user-mention {
@@ -223,10 +230,13 @@
   .avatar-bubble .bubble {
     background-color: transparent !important;
   }
+  .mini-avatar-bubble p.action a {
+    color: #666 !important;
+  }
 
   ul.repo-stats {
     background: none !important;
-    background-color: #333333 !important;
+    background-color: #333 !important;
   }
   ul.repo-stats li:first-child {
     height: 21px !important;
@@ -235,7 +245,10 @@
   }
   ul.repo-stats li,
   ul.repo-stats li a {
-    background-color: #333333 !important;
+    background-color: #333 !important;
+  }
+  ol.list-tip, ul.list-tip {
+    background-color: #333 !important;
   }
 
   #facebox .close {
@@ -322,6 +335,11 @@
 
   table.branches tr:hover td {
     background: #333333 !important;
+  }
+
+  .minibutton.switcher > span:after {
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .minibutton,
@@ -538,6 +556,10 @@
   .markdown-body table {
     border: 1px solid #555 !important;
   }
+  .markdown-body h1,
+  .markdown-body h2 {
+    color: #bbb !important;
+  }
   #wiki-wrapper #template code,
   #wiki-wrapper #template tt,
   #wiki-wrapper #template .highlight pre,
@@ -637,6 +659,11 @@
   #files .file .meta,
   #files .file .data .line_numbers,
   #files .file .data,
+  .file-box,
+  .file-box .meta,
+  .file-box .data,
+  .file-box .data .line_numbers,
+  .line_numbers.comment-count,
   .gc {
     background: transparent !important;
     color: #777777 !important;
@@ -715,6 +742,10 @@
   #dashboard .message p,
   #dashboard .message blockquote {
     color: #666 !important;
+  }
+
+  .dashboard-notice p {
+    color: #000 !important;
   }
 
   .filterbox {
@@ -804,8 +835,13 @@
   .merge-pr .bubble {
     background-color: #555 !important;
   }
+  .merge-pr p.push-more code,
+  .merge-pr p.push-more a {
+    color: #666 !important;
+  }
   .merge-pr .mergeable.clean p.message,
-  .merge-pr .mergeable.merging p.message {
+  .merge-pr .mergeable.merging p.message,
+  .merge-pr .mergeable.dirty p.message {
     color: #333 !important;
   }
 
@@ -950,6 +986,9 @@
   .pane-selector .filterbar {
     background: none !important;
   }
+  .pane-selector .selector-item.selected {
+    background-color: #777 !important;
+  }
   #new_issue, .edit_issue {
     background-color: #333 !important;
   }
@@ -971,11 +1010,15 @@
   .attached-pull a strong {
     color: #777 !important;
   }
+  .issue-ref-comment h2 a {
+    color: inherit !important;
+  }
 
   .context-pane {
     background-color: #222 !important;
   }
-  .context-pane .title {
+  .context-pane .title,
+  .context-pane > .context-title {
     background: #333 !important;
     color: #aaa !important;
   }
