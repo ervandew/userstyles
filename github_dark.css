@@ -90,6 +90,10 @@
     background-color: #333 !important;
   }
 
+  .breadcrumb strong.final-path {
+    color: #ccc !important;
+  }
+
   p.breadcrumb {
     background: #333 !important;
   }
@@ -250,6 +254,15 @@
   ol.list-tip, ul.list-tip {
     background-color: #333 !important;
   }
+  ol.list-tip li a:hover, ul.list-tip li a:hover {
+    background: #555 !important;
+  }
+  ol.list-tip li a,
+  ol.list-tip li .other,
+  ul.list-tip li a,
+  ul.list-tip li .other {
+    color: #bbb !important;
+  }
 
   #facebox .close {
     background-color: transparent !important;
@@ -335,6 +348,10 @@
 
   table.branches tr:hover td {
     background: #333333 !important;
+  }
+
+  .button-group {
+    background: none !important;
   }
 
   .minibutton.switcher > span:after {
@@ -659,10 +676,12 @@
   #files .file .meta,
   #files .file .data .line_numbers,
   #files .file .data,
+  #files .image,
   .file-box,
   .file-box .meta,
   .file-box .data,
   .file-box .data .line_numbers,
+  .file-box .image,
   .line_numbers.comment-count,
   .gc {
     background: transparent !important;
@@ -1023,6 +1042,19 @@
     color: #aaa !important;
   }
 
+  .commit.file-history-tease {
+    background: none !important;
+  }
+  .commit.file-history-tease .author a {
+    color: #4183C4 !important;
+  }
+  .commit.file-history-tease .participation {
+    background: none !important;
+  }
+  .commit.file-history-tease .participation p.quickstat strong {
+    color: #aaa !important;
+  }
+
   h3.commit-group-heading, .commit-group, .commit-group-item, .commit-group-item .gobutton,
   .full-commit, .full-commit .commit-meta,
   .full-commit .browse-button,
@@ -1319,6 +1351,30 @@
 
   p.notification-settings {
     color: #555555 !important;
+  }
+
+  .boxed-group,
+  .accordion-container {
+    background: #333 !important;
+  }
+
+  .boxed-group > h3,
+  .accordion .section a.section-head {
+    background: #555 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+  .boxed-group .boxed-group-inner,
+  .accordion {
+    background: #262626 !important;
+  }
+  .accordion .section .section-nav a {
+    box-shadow: none !important;
+  }
+  .accordion .section .section-nav a:hover,
+  .accordion .section .section-nav .active a {
+    background: #333 !important;
+    color: #bbb !important;
   }
 }
 
