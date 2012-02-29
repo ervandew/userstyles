@@ -63,8 +63,9 @@
     display: none !important;
   }
   #sidebar a {
-    padding-right: 5px !important;
     border-right: 1px solid #333 !important;
+    margin-right: 5px !important;
+    padding-right: 5px !important;
   }
   #sidebar li {
     display: inline !important;
