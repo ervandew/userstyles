@@ -18,7 +18,7 @@
   }
 
   * {
-    border-color: #555555 !important;
+    border-color: #333 !important;
     text-shadow: none !important;
   }
 
@@ -62,6 +62,13 @@
   .topsearch {
     border: none !important;
     box-shadow: none !important;
+  }
+  .topsearch .search input {
+    box-shadow: none !important;
+    padding: 5px !important;
+  }
+  .mini-icon.search-input {
+    background-image: none !important;
   }
 
   #user-links {
@@ -111,6 +118,12 @@
   .subnav-bar ul.subnav li a {
     color: #999 !important;
     padding: 8px 12px !important;
+  }
+  .subnav-bar ul.subnav li a.minibutton {
+    padding: 0 0 0 3px !important;
+  }
+  .subnav-bar ul.subnav li.search > form > a {
+    border: none !important;
   }
 
   .user-mention {
@@ -323,7 +336,7 @@
   }
   .comment-form {
     background: transparent !important;
-    border: 1px solid #555555 !important;
+    border: 1px solid #333 !important;
   }
   .comment-form ul.tabs a.selected {
     background: #777777 !important;
@@ -454,7 +467,7 @@
   .metabox {
     background: transparent !important;
     color: #aaaaaa !important;
-    border: 1px solid #555555 !important;
+    border: 1px solid #333 !important;
   }
   .metabox .editable-text:hover {
     color: #222222 !important;
@@ -541,14 +554,17 @@
     background-color: transparent !important;
   }
   #readme.announce div.plain, #readme.announce div.wikistyle {
-    border: 1px solid #555555 !important;
+    border: 1px solid #333 !important;
   }
   .wikistyle {
     color: #bbb !important;
   }
   .wikistyle h2 {
-    border-top: 4px solid #555555 !important;
+    border-top: 4px solid #333 !important;
     color: #bbb !important;
+  }
+  .markdown-body {
+    background-color: transparent !important;
   }
   .markdown-body pre,
   .markdown-body pre code,
@@ -571,7 +587,7 @@
     background: none !important;
   }
   .markdown-body table {
-    border: 1px solid #555 !important;
+    border: 1px solid #333 !important;
   }
   .markdown-body h1,
   .markdown-body h2 {
@@ -627,7 +643,7 @@
   #commit .envelope {
     background: transparent !important;
     color: #aaaaaa !important;
-    border: 1px solid #555555 !important;
+    border: 1px solid #333 !important;
   }
   #commit .human .message a,
   #commit .human .actor .name a {
@@ -638,7 +654,7 @@
   }
 
   #browser table {
-    border: 1px solid #555555 !important;
+    border: 1px solid #333 !important;
   }
   #browser th {
     background-color: transparent !important;
@@ -649,6 +665,10 @@
   }
   #browser td a.message {
     color: #aaaaaa !important;
+  }
+
+  #comments h2 {
+    color: #bbb !important;
   }
 
   ol#comments li .body {
@@ -728,7 +748,7 @@
 
   #dashboard .repos {
     background: none !important;
-    border: 1px solid #555555 !important;
+    border: 1px solid #333 !important;
   }
   .profilecols .filter-bar,
   #dashboard .filter-bar,
@@ -956,7 +976,7 @@
   }
   #issues_next #issues_list .main .actions {
     background: none !important;
-    border-bottom: 1px solid #555 !important;
+    border-bottom: 1px solid #333 !important;
   }
   #issues_next > .browser_header ul.actions li {
     border: none !important;
@@ -1031,6 +1051,18 @@
   }
   .issue-ref-comment h2 a {
     color: inherit !important;
+  }
+
+  #issues_next #issues_search .main .results .comment .comment-body,
+  #issues_next #issues_search .main .results .comment .comment-body .wrapper {
+    background: none !important;
+  }
+  #issues_next #issues_search .main .results .comment .author b,
+  #issues_next #issues_search .main .results .body {
+    color: #aaa !important;
+  }
+  #issues_next #issues_search .main .results em {
+    color: #333 !important;
   }
 
   .context-pane {
@@ -1168,8 +1200,14 @@
     background-color: transparent !important;
   }
 
+  dl.form > dt > label {
+    color: #aaa !important;
+  }
   dl.form dd input {
-    color: #222222 !important;
+    color: #222 !important;
+  }
+  dl.form > dd textarea {
+    width: 98% !important;
   }
 
   .htabs {
@@ -1372,7 +1410,7 @@
     box-shadow: none !important;
   }
   .accordion .section .section-nav a:hover,
-  .accordion .section .section-nav .active a {
+  .accordion .section .section-nav a.selected {
     background: #333 !important;
     color: #bbb !important;
   }
@@ -1381,7 +1419,7 @@
 @-moz-document domain("develop.github.com") {
 
   * {
-    border-color: #555555 !important;
+    border-color: #333 !important;
   }
 
   a {
@@ -1411,7 +1449,7 @@
 
   .title, .content h3 {
     background-color: transparent !important;
-    border-bottom: 4px solid #555555 !important;
+    border-bottom: 4px solid #333 !important;
     color: #cccccc !important;
   }
 }
