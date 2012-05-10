@@ -65,7 +65,6 @@
   }
   .topsearch .search input {
     box-shadow: none !important;
-    padding: 5px !important;
   }
   .mini-icon.search-input {
     background-image: none !important;
@@ -370,6 +369,9 @@
   .minibutton.switcher > span:after {
     border: none !important;
     box-shadow: none !important;
+  }
+  .minibutton.switcher.count > span i {
+    box-shadow: -1px 0 0 #555 !important;
   }
 
   .minibutton,
@@ -1200,6 +1202,7 @@
     background-color: transparent !important;
   }
 
+  .form-checkbox label,
   dl.form > dt > label {
     color: #aaa !important;
   }
