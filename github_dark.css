@@ -22,6 +22,10 @@
     text-shadow: none !important;
   }
 
+  .pjax-loading {
+    background: none repeat scroll 0 0 rgba(50, 50, 50, 0.6) !important;
+  }
+
   /* fixes 404 page (and maybe other non-200 pages) until github fixes it
    * themselves (broken after intro of skinny header) */
   .site {
@@ -30,6 +34,9 @@
 
   p {
     color: #aaa !important;
+  }
+  p.explain strong {
+    color: #777777 !important;
   }
 
   input, textarea, select {
@@ -151,6 +158,33 @@
     color: #222222 !important;
   }
 
+  .flash-messages {
+    background: #555 !important;
+  }
+
+  .notification-indicator {
+    background: none !important;
+    box-shadow: none !important;
+  }
+  #notification-center ul.notifications h4 > a {
+    color: #bbb !important;
+  }
+  #notification-center ul.notifications > li.read,
+  #notification-center ul.notifications > li.read h4 > a {
+    background: none !important;
+  }
+  #notification-center ul.notifications li.navigation-focus {
+    background: #333 !important;
+  }
+  #notification-center ul.notifications ul.notification-actions > li.commenters .multiple-avatars:before {
+    border-color: #555 !important;
+  }
+  #notification-center ul.notifications > li.confirmation strong,
+  #notification-center ul.notifications > li.confirmation {
+    background: #333 !important;
+    color: #bbb !important;
+  }
+
   .tip,
   .infotip,
   .notification {
@@ -250,6 +284,10 @@
     color: #666 !important;
   }
 
+  .recently-touched-branches {
+    background: none !important;
+  }
+
   ul.repo-stats {
     background: none !important;
     background-color: #333 !important;
@@ -305,7 +343,8 @@
   #compare .commits td.message a {
     color: #777777 !important;
   }
-  #compare .commits tr:nth-child(2n) td {
+  .commits-condensed,
+  #compare .commits tr td {
     background: #222222 !important;
   }
   #compare .commits tr.merge td {
@@ -375,11 +414,12 @@
   }
 
   .minibutton,
+  .social-count,
   #download_button,
   .compare-range .commit,
   #wiki-wrapper #head ul.wiki-actions a {
-    -moz-border-radius: 3px 3px 3px 3px !important;
-    -moz-box-shadow: none !important;
+    border-radius: 3px 3px 3px 3px !important;
+    box-shadow: none !important;
     background: #333 !important;
     border: 1px solid #555 !important;
     color: #777 !important;
@@ -388,43 +428,53 @@
     background: none !important;
   }*/
   .minibutton:hover,
+  .social-count:hover,
   #download_button:hover,
   ul.repo-stats li.watchers a:hover,
   ul.repo-stats li.forks a:hover,
   .compare-range a.commit:hover,
   #wiki-wrapper #head ul.wiki-actions a:hover {
     background-color: #6699cc !important;
-    color: #222222 !important;
+    color: #222 !important;
+  }
+  .social-count:before {
+    border-color: transparent #999 transparent transparent !important;
+  }
+  .social-count:after{
+    border-color: transparent #333 transparent transparent !important;
+  }
+  .social-count:hover:after {
+    border-color: transparent #6699cc transparent transparent !important;
   }
   .bigbuttons .bigbutton a {
-    background: #333333 !important;
-    border-color: #777777 !important;
+    background: #333 !important;
+    border-color: #777 !important;
   }
   ul.repo-stats li.watchers.watching a,
   ul.repo-stats li.forks.forked a {
-    color: #aaaaaa !important;
+    color: #aaa !important;
   }
   ul.clone-urls li {
-    background: #333333 !important;
-    border: 1px solid #555555 !important;
+    background: #333 !important;
+    border: 1px solid #555 !important;
   }
   ul.clone-urls li.selected {
-    background: #777777 !important;
+    background: #777 !important;
   }
   ul.clone-urls li.selected > a {
-    background: #777777 !important;
+    background: #777 !important;
     border: none !important;
-    color: #222222 !important;
+    color: #222 !important;
   }
   ul.clone-urls li > a {
     background: none !important;
     border: none !important;
-    color: #777777 !important;
+    color: #777 !important;
   }
   input.url-field {
     background-color: transparent !important;
     height: 18px !important;
-    color: #aaaaaa !important;
+    color: #aaa !important;
   }
 
   .email-quoted-reply, .email-signature-reply{
@@ -694,6 +744,12 @@
     background-color: #666666 !important;
   }
 
+  #files .file .meta .info span.icon,
+  #files .file .meta .info span.diffstat,
+  .file-box .meta .info span.icon {
+    background: transparent !important;
+  }
+
   #files .file,
   #files .file .meta,
   #files .file .data .line_numbers,
@@ -714,6 +770,12 @@
   }
   #files.commentable tr:hover td {
     background-color: #333 !important;
+  }
+  #files.commentable tr:hover td.gi {
+    background-color: #9ace9a !important;
+  }
+  #files.commentable tr:hover td.gd {
+    background-color: #ca9898 !important;
   }
   #files .add-bubble,
   #files.commentable tr.inline-comments:hover td {
@@ -869,7 +931,14 @@
   .pull-description a {
     color: #4183c4 !important;
   }
+  .pull-head,
   .pull-dest-repo a {
+    background-color: transparent !important;
+  }
+
+  .range-editor div.range-editor-form,
+  .range-editor span.pull-flag,
+  .range-editor span.action-indicator {
     background-color: transparent !important;
   }
 
@@ -907,19 +976,9 @@
   ul.repositories ul.repo-stats {
     background-color: transparent !important;
   }
-  ul.repositories ul.repo-stats li a.pill {
-    background: none !important;
-    color: #333333 !important;
-  }
-  ul.repositories ul.repo-stats li a.pill:hover {
-    background-color: #6699cc !important;
-    color: #cccccc !important;
-  }
-  ul.repositories ul.repo-stats li a.pill-watchers {
-    background: url("http://github.com/images/modules/pagehead/repostat_watchers.png") no-repeat scroll 1px -4px #777777 !important;
-  }
-  ul.repositories ul.repo-stats li a.pill-forks {
-    background: url("http://github.com/images/modules/pagehead/repostat_forks.png") no-repeat scroll 1px -4px #777777 !important;
+  ul.repositories ul.repo-stats li a {
+    line-height: 21px !important;
+    height: 21px !important;
   }
 
   .listings-layout .columns.main .content,
@@ -943,6 +1002,12 @@
   .listings-layout .columns.main .content .listings .listing .info h3 a,
   .listings-layout .columns.main .content .listings .listing .info p a {
     color: #bcbcbc !important;
+  }
+  .listings-layout .columns.sidebar .nav li a:hover {
+    background-color: #333 !important;
+  }
+  .listings-layout .columns.sidebar .nav.small li a .count {
+    color: #777 !important;
   }
 
   #issues_next > .browser_header ul.main_nav li.selected a {
@@ -1291,6 +1356,7 @@
   table.upgrades td,
   table.upgrades th {
     background: none !important;
+    box-shadow: none !important;
   }
   table.upgrades tr:hover td {
     background-color: #6699cc !important;
@@ -1301,7 +1367,7 @@
   }
 
   button.classy, a.button.classy {
-    -moz-border-radius: 3px 3px 3px 3px !important;
+    border-radius: 3px 3px 3px 3px !important;
     background: #333333 !important;
     border: 1px solid #555555 !important;
     color: #777777 !important;
@@ -1386,7 +1452,7 @@
   #logo a {
     background-color: #333 !important;
     border: 1px solid #555 !important;
-    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
     padding: 5px !important;
   }
 
@@ -1395,7 +1461,8 @@
   }
 
   .boxed-group,
-  .accordion-container {
+  .accordion-container,
+  .menu-container {
     background: #333 !important;
   }
 
@@ -1405,9 +1472,17 @@
     color: #000 !important;
     box-shadow: none !important;
   }
+  .boxed-group > h3, .boxed-group .heading,
+  .boxed-group .boxed-group-inner strong,
+  .boxed-group .boxed-group-inner h4 {
+    color: #bbb !important;
+  }
   .boxed-group .boxed-group-inner,
   .accordion {
     background: #262626 !important;
+  }
+  .boxed-group-list > li:hover {
+    background: #333 !important;
   }
   .accordion .section .section-nav a {
     box-shadow: none !important;
@@ -1456,3 +1531,4 @@
     color: #cccccc !important;
   }
 }
+
