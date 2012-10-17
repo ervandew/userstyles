@@ -22,6 +22,14 @@
     text-shadow: none !important;
   }
 
+  h3 {
+    color: #777777 !important;
+  }
+
+  .gravatar {
+    background: transparent !important;
+  }
+
   .pjax-loading {
     background: none repeat scroll 0 0 rgba(50, 50, 50, 0.6) !important;
   }
@@ -73,8 +81,9 @@
   .topsearch .search input {
     box-shadow: none !important;
   }
-  .mini-icon.search-input {
-    background-image: none !important;
+  .topsearch a.command-bar-search {
+    background: none !important;
+    box-shadow: none !important;
   }
 
   #user-links {
@@ -228,22 +237,29 @@
     background: #555 !important;
   }
 
+  .list-browser-filter-tabs .filter-tab {
+    background: none !important;
+  }
+
   .subnav-bar > ul > li:hover > a.dropdown,
   .subnav-bar > ul > li > ul,
   .subnav-bar > ul > li > ul > li > a,
   ul.bigtabs li a,
-  ul.smalltabs li a {
-    background: #333333 !important;
+  ul.smalltabs li a,
+  .list-browser-filter-tabs .filter-tab.selected {
+    background: #333 !important;
   }
-  .subnav-bar > ul > li:hover > a.dropdown {
-    color: #cccccc !important;
+  .subnav-bar > ul > li:hover > a.dropdown,
+  .list-browser-filter-tabs .filter-tab.selected {
+    color: #ccc !important;
   }
 
   .pagehead ul.tabs li a:hover,
   .subnav-bar > ul > li:hover > ul,
   .subnav-bar > ul > li > ul > li > a:hover,
   .subnav-bar > ul > li:hover > a,
-  ul.bigtabs li a:hover {
+  ul.bigtabs li a:hover,
+  .list-browser-filter-tabs .filter-tab:hover {
     background: #999999 !important;
     color: #222222 !important;
   }
@@ -258,7 +274,8 @@
   .pagehead ul.tabs li a.selected,
   .subnav-bar > ul > li > a.selected,
   ul.bigtabs li a.selected,
-  ul.smalltabs li a.selected {
+  ul.smalltabs li a.selected,
+  .tabnav-tab.selected {
     background: #555555 !important;
     border-color: #777777 !important;
     color: #000000 !important;
@@ -270,8 +287,25 @@
     background: none !important;
   }
 
+  .pagination {
+    background: none !important;
+  }
   .pagination a:hover {
     color: #4183c4 !important;
+    background: #555 !important;
+  }
+  .pagination a.current,
+  .pagination a.current:hover,
+  .pagination span.current,
+  .pagination span.current:hover {
+    color: #bbb !important;
+    background: #333 !important;
+  }
+  .pagination a.disabled:hover,
+  .pagination a.gap:hover,
+  .pagination span.disabled:hover,
+  .pagination span.gap:hover {
+    background: none !important;
   }
 
   .avatar .overlay {
@@ -333,12 +367,24 @@
   #facebox .commit-preview p.name .avatar {
     background-color: transparent !important;
   }
-
-  .commentstyle .comment .meta .gravatar,
-  #compare .commits span.gravatar,
-  .new-comments .comment .cmeta .gravatar {
-    background-color: transparent !important;
+  #facebox .warning p {
+    color: #222 !important;
   }
+
+  .discussion-bubble-inner,
+  .discusion-topic-infobar,
+  .comment-content,
+  .comment-header {
+    background: transparent !important;
+  }
+  .comment-header .comment-header-author,
+  .comment-header .comment-header-author a {
+    color: #777 !important;
+  }
+  .comment-content {
+    color: #aaa !important;
+  }
+
   #compare .commits td.author a,
   #compare .commits td.message a {
     color: #777777 !important;
@@ -372,7 +418,8 @@
     background-color: transparent !important;
     color: #777777 !important;
   }
-  .comment-form {
+  .comment-form,
+  .previewable-comment-form {
     background: transparent !important;
     border: 1px solid #333 !important;
   }
@@ -495,10 +542,6 @@
     background-color: transparent !important;
     color: #fff6a9 !important;
   }
-  #inbox .list .item .gravatar,
-  #message .envelope .header .gravatar {
-    background-color: transparent !important;
-  }
 
   #repos .public,
   #repos .private {
@@ -558,16 +601,9 @@
     background-color: transparent !important;
     color: #FFF6A9 !important;
   }
-  #network .repo img.gravatar,
-  .actor .gravatar,
-  #code_search_results .result .gravatar,
-  .news .alert .gravatar,
-  .news .commits li img,
-  .news .push .commits li img,
-  #files .file .meta .gravatar,
-  #directory .repo .gravatar img,
-  .members li .gravatar {
-    background-color: transparent !important;
+  .news .alert .pull-info, .news .alert .branch-link {
+    background: none !important;
+    color: #aaa !important;
   }
   #author_text,
   #selected_author_text {
@@ -829,9 +865,6 @@
   #dashboard .filter-bar li a.filter_selected {
     color: #ccc !important;
   }
-  .profilecols .filter-bar .filter_input {
-    width: 400px !important;
-  }
   #dashboard .repos h2 {
     color: #ccc !important;
   }
@@ -844,7 +877,11 @@
   #dashboard .message,
   #dashboard .message p,
   #dashboard .message blockquote {
-    color: #666 !important;
+    color: #aaa !important;
+  }
+
+  body.page-profile .vcard img {
+    background: none !important;
   }
 
   .dashboard-notice p {
@@ -897,9 +934,6 @@
   .browser .listing .meta {
     background-color: #444 !important;
   }
-  .browser .listing .meta .gravatar {
-    background-color: transparent !important;
-  }
   .filterbar ul.filters li {
     background: none !important;
     border: none !important;
@@ -910,12 +944,6 @@
     color: #000000 !important;
   }
 
-  .pull-description img,
-  .commits-condensed span.gravatar,
-  .new-comments .comment .cmeta .gravatar,
-  ul.userlist li .gravatar {
-    background-color: transparent !important;
-  }
   .starting-comment .meta .state {
     background-color: #333 !important;
   }
@@ -1132,6 +1160,37 @@
     color: #333 !important;
   }
 
+  .pulls-list h3 a {
+    color: #aaa !important;
+  }
+  .pulls-list .meta {
+    color: #777 !important;
+  }
+
+  .issues-list-actions,
+  .list-browser-item.closed,
+  .issues-list .list-browser-item:nth-child(2n) {
+    background: none !important;
+  }
+  .issues-list h3 a,
+  .issues-list p a {
+    color: #aaa !important;
+  }
+
+  .chromed-list-browser .none p,
+  .chromed-list-browser .error p {
+    background: none !important;
+  }
+
+  .list-browser-filterbar,
+  .list-browser-footer {
+    background: none !important;
+  }
+  .list-browser-item.navigation-focus,
+  .list-browser-item.navigation-focus:nth-child(2n) {
+    background: none !important;
+  }
+
   .context-pane {
     background-color: #222 !important;
   }
@@ -1183,10 +1242,6 @@
   #commit .commit_oneline .author a,
   #commit .commit_oneline .message a {
     color: #777 !important
-  }
-  #commit .commit_oneline .gravatar img,
-  #forkqueue table td.author img {
-    background-color: transparent !important;
   }
   #forkqueue table th,
   #forkqueue table tr td {
@@ -1342,6 +1397,9 @@
   table.thread-listing .byuser a {
     color: #777777 !important;
   }
+  .thread-subscription-status {
+    background: none !important;
+  }
   .discussion-stats strong {
     color: #777 !important;
   }
@@ -1393,10 +1451,6 @@
   }
   .add_file:hover {
     background-color: #4183c4 !important;
-  }
-
-  h3 {
-    color: #777777 !important;
   }
 
   #plans .header {
@@ -1460,10 +1514,21 @@
     color: #555555 !important;
   }
 
+  .menu {
+    background: none !important;
+  }
+  .menu a:hover,
+  .menu a.selected {
+    background: #333 !important;
+  }
+  .menu a.selected {
+    color: #bbb !important;
+  }
+
   .boxed-group,
   .accordion-container,
   .menu-container {
-    background: #333 !important;
+    background: #222 !important;
   }
 
   .boxed-group > h3,
@@ -1491,6 +1556,27 @@
   .accordion .section .section-nav a.selected {
     background: #333 !important;
     color: #bbb !important;
+  }
+
+  .blog-feedback,
+  .blog-feedback h2 {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .github-jobs-promotion p {
+    background: none !important;
+  }
+  .pagehead h1 a,
+  .github-jobs-promotion p a {
+    color: #4183C4 !important;
+  }
+  .github-jobs-promotion a.jobs-logo strong {
+    background-color: #333 !important;
+    background-position: center !important;
+    border: 1px solid #555 !important;
+    border-radius: 5px !important;
+    padding: 2px !important;
   }
 }
 
@@ -1531,4 +1617,3 @@
     color: #cccccc !important;
   }
 }
-
