@@ -60,18 +60,22 @@
     background: none !important;
   }
 
-  #header {
+  .header {
     background: none !important;
     border: none !important;
     box-shadow: none !important;
+    border-bottom: 1px solid #333 !important;
   }
 
-  #header a {
+  .header a {
     color: #bbb !important;
   }
 
-  #header a:hover {
+  .header a:hover {
     color: #4183c4 !important;
+  }
+  .divider-vertical {
+    background: none !important;
   }
 
   .topsearch {
@@ -86,14 +90,7 @@
     box-shadow: none !important;
   }
 
-  #user-links {
-    background: #333 !important;
-    border: 1px solid #555 !important;
-    box-shadow: none !important;
-  }
-
   #wrapper,
-  #header-wrapper,
   .pagehead,
   .pagehead.repohead ul.actions,
   .pagehead.repohead ul.pagehead-actions,
@@ -156,13 +153,13 @@
   .userbox, .userbox .inner, ul.nav.logged_out {
     background: none !important;
   }
-  #header .userbox .avatarname a {
+  .header .userbox .avatarname a {
     color: #aaaaaa !important;
   }
-  #header a.unread_count {
+  .header a.unread_count {
     background-color: #333333 !important;
   }
-  #header a.unread_count.new_messages.notifications_count {
+  .header a.unread_count.new_messages.notifications_count {
     background-color: #aece91 !important;
     color: #222222 !important;
   }
