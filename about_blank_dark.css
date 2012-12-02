@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document url("about:blank") {
-  body {
+@-moz-document url("about:blank"), url("about:newtab") {
+  body, #newtab-scrollbox {
     background: #4f4f4f !important;
   }
 }
