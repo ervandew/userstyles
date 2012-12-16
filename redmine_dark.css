@@ -5,6 +5,7 @@
   body {
     background: #262626 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAENCAYAAADOoA9GAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABZSURBVHjaYmBgYPjPACP+MYFIEPEflfUflwQRSojgUiyGX4IkJTTRi5P4R39T/tFByT8qa6OJof8GPJgGPjHQI/FTki+pWFCQXlQhsZiBmBFMwLlgwAgQYAAYPe0bQ81rlgAAAABJRU5ErkJggg==") top left repeat-x !important;
     color: #bbb !important;
+    min-width: 600px !important;
   }
 
   /* used on the wiki syntax pages */
@@ -21,12 +22,46 @@
     border-color: #555 !important;
   }
 
-  #wrapper, #wrapper2, #content, #header, #main, #top-menu, #footer, #footer .bgl, #footer .bgr {
+  #wrapper, #wrapper2, #content, #main, #top-menu, #footer, #footer .bgl, #footer .bgr {
     background: transparent !important;
     color: #bbb !important;
   }
+  #header {
+    background-color: transparent !important;
+  }
   #footer {
     border-color: #333 !important;
+  }
+  #content {
+    border: none !important;
+  }
+
+  #sidebar {
+    float: none !important;
+    width: 25px !important;
+    position: absolute !important;
+    right: 0 !important;
+  }
+  #sidebar > * {
+    visibility: hidden;
+  }
+  #content {
+    width: 95% !important;
+  }
+  #sidebar:before {
+    content: ">>";
+  }
+  #sidebar:hover:before {
+    content: "";
+  }
+  #sidebar:hover {
+    width: 22% !important;
+  }
+  #sidebar:hover > * {
+    visibility: visible !important;
+  }
+  #sidebar:hover + #content {
+   width: 75% !important;
   }
 
   #main, #main > #content {
@@ -40,38 +75,18 @@
   #main > #content > h2 {
     margin-bottom: 0 !important;
   }
+  #main-menu {
+    background: none !important;
+  }
+  #main-menu li a {
+    border-color: #222 !important;
+  }
+  #main-menu li a:hover {
+    border-color: #555 !important;
+  }
 
   #top-menu #loggedas {
     color: #bbb !important;
-  }
-
-  #content {
-    border: none !important;
-    width: 99% !important;
-  }
-  #sidebar {
-    margin-left: 10px !important;
-    width: 99% !important;
-    float: none !important;
-    min-height: 0 !important;
-  }
-  #sidebar h3 {
-    margin-top: 5px !important;
-    border: none !important;
-  }
-  #sidebar br {
-    display: none !important;
-  }
-  #sidebar a {
-    border-right: 1px solid #333 !important;
-    margin-right: 5px !important;
-    padding-right: 5px !important;
-  }
-  #sidebar li {
-    display: inline !important;
-  }
-  #sidebar ins {
-    display: none !important;
   }
 
   #login-form {
@@ -241,9 +256,9 @@
   }
 
   table.filecontent {
-    background: #444 !important;
+    background: none !important;
     border-color: #555 !important;
-    color: #ccc !important;
+    color: #888 !important;
   }
 
   table.filecontent th {
@@ -256,11 +271,13 @@
   }
 
   .diff_out {
-    background: #ffcccc !important;
+    background: #ca9898 !important;
+    color: #222 !important;
   }
 
   .diff_in {
-    background: #ccffcc !important;
+    background: #9ace9a !important;
+    color: #222 !important;
   }
 
   .gantt_hdr {
