@@ -78,6 +78,11 @@
     background: none !important;
   }
 
+  .header-actions .button.classy,
+  .header-actions .button.primary.classy {
+    box-shadow: none !important;
+  }
+
   .topsearch {
     border: none !important;
     box-shadow: none !important;
@@ -200,7 +205,9 @@
   .tip p,
   .message p,
   .infotip p,
-  .octotip p {
+  .octotip p,
+  .octofication .message p,
+  #dashboard .octofication .message p {
     color: #222 !important;
   }
   #inbox .message p {
@@ -380,6 +387,10 @@
   }
   .comment-content {
     color: #aaa !important;
+  }
+
+  .drag-and-drop {
+    background: none !important;
   }
 
   #compare .commits td.author a,
@@ -1498,6 +1509,7 @@
   }
   #header .logo img,
   .site-logo img,
+  .header-logo-wordmark,
   img[src$="help.github.png"],
   img[src$="logo_gist.png"],
   #logo a {
@@ -1505,6 +1517,10 @@
     border: 1px solid #555 !important;
     border-radius: 5px !important;
     padding: 5px !important;
+  }
+  .github-logo-4x-hover {
+      left: 5px !important;
+      top: 5px !important;
   }
 
   p.notification-settings {
