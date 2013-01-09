@@ -83,6 +83,10 @@
     box-shadow: none !important;
   }
 
+  #user-links .name img {
+    box-shadow: none !important;
+  }
+
   .topsearch {
     border: none !important;
     box-shadow: none !important;
@@ -128,6 +132,7 @@
   .pagehead h1 {
     color: #cccccc !important;
   }
+  .pagehead .container > ul.tabs li a .counter,
   .pagehead > ul.tabs li a .counter,
   .subnav-bar ul.subnav .counter {
     background-color: #222 !important;
@@ -322,6 +327,16 @@
     color: #666 !important;
   }
 
+  .capped-box,
+  .capped-box h3 {
+    background-color: transparent !important;
+  }
+
+  .blankslate {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
   .recently-touched-branches {
     background: none !important;
   }
@@ -373,6 +388,10 @@
   }
   #facebox .warning p {
     color: #222 !important;
+  }
+
+  .suggester {
+    background: #222 !important;
   }
 
   .discussion-bubble-inner,
@@ -890,6 +909,9 @@
 
   body.page-profile .vcard img {
     background: none !important;
+  }
+  body.page-profile .vcard h1 {
+    color: #4183C4 !important;
   }
 
   .dashboard-notice p {
