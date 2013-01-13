@@ -56,8 +56,17 @@
     display: none !important;
   }
 
-  #main, #footer, .upper_footer, .lower_footer, .locales, .locales .fade, .homehead .hero h1, .hero .textographic {
+  #main,
+  #footer, .upper_footer, .lower_footer,
+  .locales, .locales .fade,
+  .homehead .hero h1, .hero .textographic,
+  .jumbotron {
     background: none !important;
+  }
+
+  .plans-pricing-callout {
+    background: none !important;
+    box-shadow: none !important;
   }
 
   .header {
@@ -78,9 +87,13 @@
     background: none !important;
   }
 
-  .header-actions .button.classy,
-  .header-actions .button.primary.classy {
+  .header-actions .button {
+    background: #333 !important;
     box-shadow: none !important;
+  }
+  .header-actions .button:hover {
+    background-color: #6699cc !important;
+    color: #222 !important;
   }
 
   #user-links .name img {
@@ -146,6 +159,10 @@
   }
   .subnav-bar ul.subnav li.search > form > a {
     border: none !important;
+  }
+
+  .auth-form-body {
+    background: none !important;
   }
 
   .user-mention {
