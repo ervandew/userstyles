@@ -237,6 +237,11 @@
     color: #222 !important;
   }
 
+  .select-menu-button:after{
+    border-color: #555 !important;
+    box-shadow: none !important;
+  }
+
   ul.smalltabs,
   ul.smalltabs .counter {
     background: #333 !important;
@@ -390,8 +395,15 @@
     color: #222 !important;
   }
 
+  .autocomplete-results,
   .suggester {
     background: #222 !important;
+  }
+  .autocomplete-item {
+    color: #aaa !important;
+  }
+  .autocomplete-item.selected {
+    color: #fff !important;
   }
 
   .discussion-bubble-inner,
@@ -406,6 +418,14 @@
   }
   .comment-content {
     color: #aaa !important;
+  }
+
+  .mini-discussion-bubble .mini-discussion-bubble-action,
+  .mini-discussion-bubble .mini-discussion-bubble-action a {
+    color: #aaa !important;
+  }
+  .mini-discussion-bubble .discussion-bubble-content:before {
+    border-color: transparent transparent #555 !important;
   }
 
   .drag-and-drop {
@@ -470,6 +490,9 @@
     background: none !important;
     color: #777777 !important;
   }*/
+  .clone-urls li + li > a {
+    box-shadow: none !important;
+  }
 
   table.branches tr:hover td {
     background: #333333 !important;
@@ -480,6 +503,7 @@
   }
 
   .minibutton.switcher > span:after {
+    background: none !important;
     border: none !important;
     box-shadow: none !important;
   }
